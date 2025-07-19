@@ -1,5 +1,7 @@
 ﻿# <img src="./CRMDashboard/Assets/CRMDashboard.png" alt="CRM Dashboard" width="32" style="vertical-align:middle;"> CRM Dashboard Blazor WebAssembly
 
+![Dashboard Screenshot](./CRMDashboard/Assets/CRMDashboard.png)
+
 ![.NET 9](https://img.shields.io/badge/.NET-9.0-blueviolet)
 ![Blazor WebAssembly](https://img.shields.io/badge/Blazor-WebAssembly-512BD4?logo=blazor)
 ![MudBlazor](https://img.shields.io/badge/MudBlazor-Component%20Library-594AE2?logo=blazor)
@@ -43,7 +45,7 @@ A feature-rich, responsive CRM dashboard built with **Blazor WebAssembly** and *
 - [<img src="https://img.shields.io/badge/.NET-9.0-blueviolet" height="20"/>](https://dotnet.microsoft.com/)
 - [<img src="https://www.chartjs.org/favicon.ico" height="20"/> Chart.js (via JS interop)](https://www.chartjs.org/)
 - [<img src="https://gridstackjs.com/favicon.ico" height="20"/> GridStack.js](https://gridstackjs.com/)
-- [<img src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/favicon.ico" height="20"/> Font Awesome](https://fontawesome.com/)
+- [Font Awesome](https://fontawesome.com/)
 
 ---
 
