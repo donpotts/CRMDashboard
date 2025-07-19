@@ -1,0 +1,51 @@
+﻿@namespace CRMDashboard.Layout
+@inherits LayoutComponentBase
+@inject ThemeService ThemeService
+
+<MudThemeProvider IsDarkMode="@ThemeService.IsDarkMode" />
+@using CRMDashboard.Pages
+
+<div class="page @(ThemeService.IsDarkMode ? "dark-mode" : null)">
+    <main>
+        <div class="top-row px-4 d-flex align-items-center justify-content-between appbar-gradient">
+            <a class="mud-typography mud-typography-h5 text-white">CRM Dashboard</a>
+            <div class="d-flex align-items-center">
+                <button class="theme-toggle-btn" @onclick="ToggleTheme" title="Toggle light/dark mode">
+                    @(ThemeService.IsDarkMode ? "🌙" : "☀️")
+                </button>
+                <a href="https://github.com/DonPotts" target="_blank" class="text-white">About</a>
+            </div>
+        </div>
+        <article class="content px-4">
+            @Body
+        </article>
+        <footer class="footer">
+            <div class="footer-content">
+                <span class="footer-icon">🌐</span>
+                <span>WebSite: <a href="https://www.DonPotts.com" target="_blank">www.DonPotts.com</a></span>
+                <span class="footer-separator">|</span>
+                <span class="footer-icon">✉️</span>
+                <span>Email: <a href="mailto:Don.Potts@DonPotts.com">Don.Potts@DonPotts.com</a></span>
+                <span class="footer-separator">|</span>
+                <span class="footer-icon">©</span>
+                <span>@year Don Potts. All rights reserved.</span>
+            </div>
+        </footer>
+    </main>
+</div>
+
+@code {
+    private int year = DateTime.Now.Year;
+    protected override void OnInitialized()
+    {
+        ThemeService.OnChange += StateHasChanged;
+    }
+    public void Dispose()
+    {
+        ThemeService.OnChange -= StateHasChanged;
+    }
+    private void ToggleTheme()
+    {
+        ThemeService.SetDarkMode(!ThemeService.IsDarkMode);
+    }
+}
