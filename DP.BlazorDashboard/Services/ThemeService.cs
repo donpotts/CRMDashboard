@@ -1,23 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace DP.BlazorDashboard.Services;
 
-public class ThemeService
+/// <summary>
+/// Default implementation of IThemeService for simple dark/light mode management.
+/// </summary>
+public class ThemeService : IThemeService
 {
-    public bool IsDarkMode { get; set; }
+    private bool _isDarkMode;
 
+    /// <inheritdoc />
+    public bool IsDarkMode => _isDarkMode;
+
+    /// <inheritdoc />
     public void SetDarkMode(bool isDarkMode)
     {
-        IsDarkMode = isDarkMode;
-        NotifyStateChanged(); // Fire the OnChange event
+        if (_isDarkMode != isDarkMode)
+        {
+            _isDarkMode = isDarkMode;
+            OnChange?.Invoke();
+        }
     }
 
-    public event Action OnChange;
-
-    public void NotifyStateChanged() => OnChange?.Invoke();
+    /// <inheritdoc />
+    public event Action? OnChange;
 }
-

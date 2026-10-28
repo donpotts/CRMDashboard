@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>DP.BlazorDashboard</id>
+    <version>2.0.0</version>
+    <title>DP.BlazorDashboard</title>
+    <authors>Don Potts</authors>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <readme>README.md</readme>
+    <projectUrl>https://github.com/DonPotts/DP.BlazorDashboard</projectUrl>
+    <description>A batteries-included dashboard component library for MudBlazor applications featuring drag-and-drop grid layout with GridStack, built-in Chart.js charting, localStorage persistence, and dark/light theme support.</description>
+    <copyright>Copyright (c) Don Potts 2024</copyright>
+    <tags>blazor mudblazor dashboard gridstack charts chartjs components razor webassembly</tags>
+    <repository type="git" url="https://github.com/DonPotts/DP.BlazorDashboard" commit="e4e1fc6c82d0b95b754fe2b3be5d9dbe594237fa" />
+    <dependencies>
+      <group targetFramework="net8.0">
+        <dependency id="Microsoft.AspNetCore.Components.Web" version="8.0.6" exclude="Build,Analyzers" />
+        <dependency id="MudBlazor" version="7.0.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net9.0">
+        <dependency id="Microsoft.AspNetCore.Components.Web" version="8.0.6" exclude="Build,Analyzers" />
+        <dependency id="MudBlazor" version="7.0.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

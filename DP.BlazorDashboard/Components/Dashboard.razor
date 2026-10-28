@@ -1,13 +1,24 @@
-﻿@inject IJSRuntime JSRuntime
+@inject IJSRuntime JSRuntime
 @inject IDialogService DialogService
-@inject ThemeService ThemeService
+@inject IThemeService ThemeService
+@inject IDashboardStorageService StorageService
+@inject ChartService ChartService
 @implements IAsyncDisposable
 
 <div class="dashboard-wrapper">
-    <div class="controls">
-        <MudButton Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.Add" Color="MudBlazor.Color.Primary" OnClick="HandleAddCard">Add Card</MudButton>
-        <MudButton Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.DeleteForever" Color="MudBlazor.Color.Primary" OnClick="HandleResetLayout">Reset Layout</MudButton>
-    </div>
+    @if (_effectiveOptions.ShowAddButton || _effectiveOptions.ShowResetButton)
+    {
+        <div class="controls">
+            @if (_effectiveOptions.ShowAddButton)
+            {
+                <MudButton Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.Add" Color="MudBlazor.Color.Primary" OnClick="HandleAddCard">@AddCardText</MudButton>
+            }
+            @if (_effectiveOptions.ShowResetButton)
+            {
+                <MudButton Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.DeleteForever" Color="MudBlazor.Color.Primary" OnClick="HandleResetLayout">@ResetLayoutText</MudButton>
+            }
+        </div>
+    }
 
     <div class="dashboard-container">
         <div class="grid-stack"></div>
@@ -20,14 +31,20 @@
                 <div class="card-header">
                     <span class="card-title">@card.Title</span>
                     <div class="card-controls">
-                        <span class="move-handle"><i class="fas fa-arrows-alt"></i></span>
-                        <span class="delete-handle" data-card-id="@card.Id">
-                            <i class="fas fa-trash-alt"></i>
-                        </span>
+                        @if (_effectiveOptions.AllowMove && !card.Locked)
+                        {
+                            <span class="move-handle"><i class="fas fa-arrows-alt"></i></span>
+                        }
+                        @if (_effectiveOptions.AllowDelete && !card.Locked)
+                        {
+                            <span class="delete-handle" data-card-id="@card.Id">
+                                <i class="fas fa-trash-alt"></i>
+                            </span>
+                        }
                     </div>
                 </div>
-                <div class="card-body">
-                    @CardRenderer(card)
+                <div class="card-body @card.CssClass">
+                    @GetCardContent(card)
                 </div>
             </div>
         }
@@ -35,14 +52,75 @@
 </div>
 
 @code {
+    /// <summary>
+    /// Storage key for persisting layout to localStorage.
+    /// </summary>
     [Parameter, EditorRequired]
     public string StorageKey { get; set; } = default!;
+
+    /// <summary>
+    /// Factory function that returns the initial card layout.
+    /// </summary>
     [Parameter, EditorRequired]
     public Func<List<DashboardCard>> InitialLayoutFactory { get; set; } = default!;
-    [Parameter, EditorRequired]
-    public RenderFragment<DashboardCard> CardRenderer { get; set; } = default!;
+
+    /// <summary>
+    /// Optional custom renderer for card content. If not provided, charts are rendered automatically.
+    /// </summary>
+    [Parameter]
+    public RenderFragment<DashboardCard>? CardRenderer { get; set; }
+
+    /// <summary>
+    /// Event fired when layout changes (card added, deleted, moved, resized).
+    /// </summary>
     [Parameter]
     public EventCallback OnLayoutChanged { get; set; }
+
+    /// <summary>
+    /// Configuration options for the dashboard. Overrides global options if provided.
+    /// </summary>
+    [Parameter]
+    public DashboardOptions? Options { get; set; }
+
+    /// <summary>
+    /// Event fired when a card is added.
+    /// </summary>
+    [Parameter]
+    public EventCallback<DashboardCard> OnCardAdded { get; set; }
+
+    /// <summary>
+    /// Event fired when a card is deleted.
+    /// </summary>
+    [Parameter]
+    public EventCallback<DashboardCard> OnCardDeleted { get; set; }
+
+    /// <summary>
+    /// Event fired when layout is saved.
+    /// </summary>
+    [Parameter]
+    public EventCallback<List<DashboardCard>> OnLayoutSaved { get; set; }
+
+    /// <summary>
+    /// Text for the Add Card button.
+    /// </summary>
+    [Parameter]
+    public string AddCardText { get; set; } = "Add Card";
+
+    /// <summary>
+    /// Text for the Reset Layout button.
+    /// </summary>
+    [Parameter]
+    public string ResetLayoutText { get; set; } = "Reset Layout";
+
+    /// <summary>
+    /// Optional factory for creating new cards. If not provided, default cards are created.
+    /// </summary>
+    [Parameter]
+    public Func<DashboardCard>? NewCardFactory { get; set; }
+
+    // Injected global options (optional)
+    [Inject]
+    private DashboardOptions? GlobalOptions { get; set; }
 
     private IJSObjectReference? _jsModule;
     private DotNetObjectReference<Dashboard>? _dotNetHelper;
@@ -50,14 +128,20 @@
     private bool _isGridJsInitialized = false;
     private int _cardCounter = 0;
 
+    private DashboardOptions _effectiveOptions => Options ?? GlobalOptions ?? new DashboardOptions();
+
     protected override void OnInitialized()
     {
         _dotNetHelper = DotNetObjectReference.Create(this);
-        ThemeService.OnChange += UpdateCharts;
+        ThemeService.OnChange += HandleThemeChange;
     }
 
-    private async void UpdateCharts()
-    {        
+    private async void HandleThemeChange()
+    {
+        if (_effectiveOptions.AutoRenderCharts)
+        {
+            await RenderChartsAsync();
+        }
         await OnLayoutChanged.InvokeAsync();
         StateHasChanged();
     }
@@ -71,22 +155,67 @@
         }
     }
 
+    private RenderFragment GetCardContent(DashboardCard card)
+    {
+        // If consumer provides custom renderer, use it
+        if (CardRenderer != null)
+        {
+            return CardRenderer(card);
+        }
+
+        // Auto-render charts for cards with ChartConfig
+        if (card.ChartConfig != null && _effectiveOptions.AutoRenderCharts)
+        {
+            return builder =>
+            {
+                builder.OpenComponent<ChartCard>(0);
+                builder.AddAttribute(1, "CardId", card.Id);
+                builder.AddAttribute(2, "Config", card.ChartConfig);
+                builder.CloseComponent();
+            };
+        }
+
+        // Fallback to default content
+        return builder =>
+        {
+            builder.OpenElement(0, "div");
+            builder.AddAttribute(1, "class", "default-card");
+            builder.OpenElement(2, "div");
+            builder.AddAttribute(3, "class", "default-card-content");
+            builder.OpenElement(4, "h4");
+            builder.AddContent(5, card.Title);
+            builder.CloseElement();
+            builder.OpenElement(6, "p");
+            builder.AddContent(7, "Configure this card by setting CardType or ChartConfig.");
+            builder.CloseElement();
+            builder.CloseElement();
+            builder.CloseElement();
+        };
+    }
+
     private async Task LoadLayoutFromStorage()
     {
-        var savedLayoutJson = await JSRuntime.InvokeAsync<string>("localStorage.getItem", StorageKey);
-        if (!string.IsNullOrEmpty(savedLayoutJson))
+        if (_effectiveOptions.PersistLayout)
         {
-            var savedItems = System.Text.Json.JsonSerializer.Deserialize<List<DashboardCard>>(savedLayoutJson)!;
-            var initialItems = InitialLayoutFactory.Invoke().ToDictionary(c => c.Id);
-            foreach (var item in savedItems)
+            var savedItems = await StorageService.LoadLayoutAsync(StorageKey);
+            if (savedItems.Any())
             {
-                if (initialItems.TryGetValue(item.Id, out var initial))
+                var initialItems = InitialLayoutFactory.Invoke().ToDictionary(c => c.Id);
+                foreach (var item in savedItems)
                 {
-                    item.Title = initial.Title;
-                    item.CardType = initial.CardType;
+                    if (initialItems.TryGetValue(item.Id, out var initial))
+                    {
+                        item.Title = initial.Title;
+                        item.CardType = initial.CardType;
+                        item.ChartConfig = initial.ChartConfig;
+                    }
                 }
+                _currentLayout = savedItems;
             }
-            _currentLayout = savedItems;
+            else
+            {
+                _currentLayout = InitialLayoutFactory.Invoke();
+            }
         }
         else
         {
@@ -101,45 +230,83 @@
             _jsModule = await JSRuntime.InvokeAsync<IJSObjectReference>("import", "./_content/DP.BlazorDashboard/js/dashboard-manager.js");
         }
 
-        await _jsModule.InvokeVoidAsync("init", ".dashboard-wrapper", _dotNetHelper, _currentLayout);
+        var gridOptions = _effectiveOptions.Grid;
+        await _jsModule.InvokeVoidAsync("init", ".dashboard-wrapper", _dotNetHelper, _currentLayout, gridOptions);
         await _jsModule.InvokeVoidAsync("setupDeleteEventDelegation", _dotNetHelper);
 
         await OnLayoutChanged.InvokeAsync();
+
+        // Auto-render charts after grid initialization
+        if (_effectiveOptions.AutoRenderCharts)
+        {
+            await RenderChartsAsync();
+        }
+    }
+
+    private async Task RenderChartsAsync()
+    {
+        var chartsToRender = _currentLayout.Where(c => c.ChartConfig != null).ToList();
+        if (chartsToRender.Any())
+        {
+            await ChartService.RenderAllChartsAsync(chartsToRender, _effectiveOptions.ChartRenderDelayMs);
+        }
     }
 
     private async Task HandleAddCard()
     {
         var (nextX, nextY) = CalculateNextCardPosition();
-    
-        var newCard = new DashboardCard 
-        { 
-            Id = $"new-card-{++_cardCounter}",
-            Title = "New Card", 
-            CardType = "default", 
-            X = nextX, 
-            Y = nextY, 
-            W = 4, 
-            H = 5 
-        };
+        var gridOptions = _effectiveOptions.Grid;
+
+        DashboardCard newCard;
+        if (NewCardFactory != null)
+        {
+            newCard = NewCardFactory();
+            newCard.Id = $"new-card-{++_cardCounter}";
+            if (newCard.X == 0 && newCard.Y == 0)
+            {
+                newCard.X = nextX;
+                newCard.Y = nextY;
+            }
+        }
+        else
+        {
+            newCard = new DashboardCard
+            {
+                Id = $"new-card-{++_cardCounter}",
+                Title = "New Card",
+                CardType = "default",
+                X = nextX,
+                Y = nextY,
+                W = gridOptions.DefaultCardWidth,
+                H = gridOptions.DefaultCardHeight
+            };
+        }
+
         _currentLayout.Add(newCard);
-    
-        var json = System.Text.Json.JsonSerializer.Serialize(_currentLayout);
-        await JSRuntime.InvokeVoidAsync("localStorage.setItem", StorageKey, json);
-    
+
+        if (_effectiveOptions.PersistLayout)
+        {
+            await StorageService.SaveLayoutAsync(StorageKey, _currentLayout);
+            await OnLayoutSaved.InvokeAsync(_currentLayout);
+        }
+
         await InvokeAsync(StateHasChanged);
-    
+
         if (_jsModule != null)
         {
             await _jsModule.InvokeVoidAsync("addCard", newCard);
         }
-    
+
+        await OnCardAdded.InvokeAsync(newCard);
         await OnLayoutChanged.InvokeAsync();
     }
 
     private (int x, int y) CalculateNextCardPosition()
     {
         if (_currentLayout.Count == 0) return (0, 0);
-        const int gridWidth = 12; const int cardWidth = 4;
+        var gridOptions = _effectiveOptions.Grid;
+        int gridWidth = gridOptions.Column;
+        int cardWidth = gridOptions.DefaultCardWidth;
         int maxY = _currentLayout.Max(c => c.Y + c.H);
         var bottomRowCards = _currentLayout.Where(c => c.Y + c.H == maxY).ToList();
         if (bottomRowCards.Any())
@@ -154,36 +321,53 @@
     [JSInvokable]
     public async Task HandleDeleteCard(string cardId)
     {
+        if (!_effectiveOptions.AllowDelete) return;
+
         var cardToDelete = _currentLayout.FirstOrDefault(c => c.Id == cardId);
-        if (cardToDelete == null) return;
+        if (cardToDelete == null || cardToDelete.Locked) return;
 
         var parameters = new DialogParameters<ConfirmDeleteDialog>
         {
             { x => x.CardTitle, cardToDelete.Title }
         };
 
-        var dialog = DialogService.Show<ConfirmDeleteDialog>("Confirm Deletion", parameters);
+        var dialog = await DialogService.ShowAsync<ConfirmDeleteDialog>("Confirm Deletion", parameters);
         var result = await dialog.Result;
 
-        if (!result.Canceled)
+        if (result != null && !result.Canceled)
         {
             _currentLayout.Remove(cardToDelete);
-    
-            var json = System.Text.Json.JsonSerializer.Serialize(_currentLayout);
-            await JSRuntime.InvokeVoidAsync("localStorage.setItem", StorageKey, json);
-    
+
+            if (_effectiveOptions.PersistLayout)
+            {
+                await StorageService.SaveLayoutAsync(StorageKey, _currentLayout);
+                await OnLayoutSaved.InvokeAsync(_currentLayout);
+            }
+
             await RerenderGrid();
+            await OnCardDeleted.InvokeAsync(cardToDelete);
             await OnLayoutChanged.InvokeAsync();
         }
     }
-    
+
     private async Task HandleResetLayout()
     {
         _currentLayout = InitialLayoutFactory.Invoke();
         _cardCounter = _currentLayout.Any() ? _currentLayout.Max(c => int.TryParse(c.Id.Split('-').Last(), out var num) ? num : 0) : 0;
-        await JSRuntime.InvokeVoidAsync("localStorage.removeItem", StorageKey);
+
+        if (_effectiveOptions.PersistLayout)
+        {
+            await StorageService.ClearLayoutAsync(StorageKey);
+        }
+
         await RerenderGrid();
         await OnLayoutChanged.InvokeAsync();
+
+        // Re-render charts after reset
+        if (_effectiveOptions.AutoRenderCharts)
+        {
+            await RenderChartsAsync();
+        }
     }
 
     private async Task RerenderGrid()
@@ -209,12 +393,18 @@
                 cardToUpdate.H = item.H;
             }
         }
-        var json = System.Text.Json.JsonSerializer.Serialize(_currentLayout);
-        await JSRuntime.InvokeVoidAsync("localStorage.setItem", StorageKey, json);
+
+        if (_effectiveOptions.PersistLayout)
+        {
+            await StorageService.SaveLayoutAsync(StorageKey, _currentLayout);
+            await OnLayoutSaved.InvokeAsync(_currentLayout);
+        }
     }
 
     public async ValueTask DisposeAsync()
     {
+        ThemeService.OnChange -= HandleThemeChange;
+
         if (_jsModule != null)
         {
             try

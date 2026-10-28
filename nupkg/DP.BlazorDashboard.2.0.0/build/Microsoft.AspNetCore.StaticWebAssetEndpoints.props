@@ -1,0 +1,880 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/background.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\background.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-WeOKCkI7IdJHs2kCqsKgLfiWX4/sNPbaRUspOLefkCY="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"378"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022WeOKCkI7IdJHs2kCqsKgLfiWX4/sNPbaRUspOLefkCY=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/background.x2rx4ajns0.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\background.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"x2rx4ajns0"},{"Name":"integrity","Value":"sha256-WeOKCkI7IdJHs2kCqsKgLfiWX4/sNPbaRUspOLefkCY="},{"Name":"label","Value":"_content/DP.BlazorDashboard/background.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"378"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022WeOKCkI7IdJHs2kCqsKgLfiWX4/sNPbaRUspOLefkCY=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/css/dashboard.05ey6u144k.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\dashboard.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"05ey6u144k"},{"Name":"integrity","Value":"sha256-FIp98Dy9Kx9LMO/QSptV97rvHXSkDtNKs78CAlEQFDA="},{"Name":"label","Value":"_content/DP.BlazorDashboard/css/dashboard.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"8287"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022FIp98Dy9Kx9LMO/QSptV97rvHXSkDtNKs78CAlEQFDA=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/css/dashboard.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\dashboard.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-FIp98Dy9Kx9LMO/QSptV97rvHXSkDtNKs78CAlEQFDA="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"8287"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022FIp98Dy9Kx9LMO/QSptV97rvHXSkDtNKs78CAlEQFDA=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/js/chart-renderer.7ifpije7pl.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\chart-renderer.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"7ifpije7pl"},{"Name":"integrity","Value":"sha256-vzhNylkGHup/NHFC4DSX2D1gA\u002BX\u002BqQ\u002BzAyDUuzIbcbc="},{"Name":"label","Value":"_content/DP.BlazorDashboard/js/chart-renderer.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2363"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022vzhNylkGHup/NHFC4DSX2D1gA\u002BX\u002BqQ\u002BzAyDUuzIbcbc=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/js/chart-renderer.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\chart-renderer.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-vzhNylkGHup/NHFC4DSX2D1gA\u002BX\u002BqQ\u002BzAyDUuzIbcbc="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2363"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022vzhNylkGHup/NHFC4DSX2D1gA\u002BX\u002BqQ\u002BzAyDUuzIbcbc=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/js/dashboard-manager.01jeqfod72.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\dashboard-manager.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"01jeqfod72"},{"Name":"integrity","Value":"sha256-LPK5aKLSKKvWGQCrDDzGhA289fvz98cEjLes7QR0OI4="},{"Name":"label","Value":"_content/DP.BlazorDashboard/js/dashboard-manager.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"8299"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022LPK5aKLSKKvWGQCrDDzGhA289fvz98cEjLes7QR0OI4=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:39:37 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/js/dashboard-manager.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\dashboard-manager.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-LPK5aKLSKKvWGQCrDDzGhA289fvz98cEjLes7QR0OI4="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"8299"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022LPK5aKLSKKvWGQCrDDzGhA289fvz98cEjLes7QR0OI4=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:39:37 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/chart.js/chart.umd.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\chart.js\chart.umd.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-ddgnx7InH5OMIa64mwjGkvKzZBSfOl4IbviYZQ/U\u002BM8="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"204962"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022ddgnx7InH5OMIa64mwjGkvKzZBSfOl4IbviYZQ/U\u002BM8=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/chart.js/chart.umd.n5ka3sxzan.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\chart.js\chart.umd.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"n5ka3sxzan"},{"Name":"integrity","Value":"sha256-ddgnx7InH5OMIa64mwjGkvKzZBSfOl4IbviYZQ/U\u002BM8="},{"Name":"label","Value":"_content/DP.BlazorDashboard/lib/chart.js/chart.umd.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"204962"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022ddgnx7InH5OMIa64mwjGkvKzZBSfOl4IbviYZQ/U\u002BM8=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/font-awesome/css/all.min.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\font-awesome\css\all.min.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-U0x6ydTvXLKYKMTVcaBTmYce3sUPW4xyNyN5vtIPsDM="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"102225"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022U0x6ydTvXLKYKMTVcaBTmYce3sUPW4xyNyN5vtIPsDM=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/font-awesome/css/all.min.tofxavwjz8.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\font-awesome\css\all.min.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"tofxavwjz8"},{"Name":"integrity","Value":"sha256-U0x6ydTvXLKYKMTVcaBTmYce3sUPW4xyNyN5vtIPsDM="},{"Name":"label","Value":"_content/DP.BlazorDashboard/lib/font-awesome/css/all.min.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"102225"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022U0x6ydTvXLKYKMTVcaBTmYce3sUPW4xyNyN5vtIPsDM=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/font-awesome/webfonts/fa-brands-400.q73rkx93r0.woff2">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\font-awesome\webfonts\fa-brands-400.woff2'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"q73rkx93r0"},{"Name":"integrity","Value":"sha256-\u002Bq5vwKqUzFveUHZkfIF6IyBglqHL7aENHG89idYWPtE="},{"Name":"label","Value":"_content/DP.BlazorDashboard/lib/font-awesome/webfonts/fa-brands-400.woff2"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"109808"},{"Name":"Content-Type","Value":"font/woff2"},{"Name":"ETag","Value":"\u0022\u002Bq5vwKqUzFveUHZkfIF6IyBglqHL7aENHG89idYWPtE=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/font-awesome/webfonts/fa-brands-400.woff2">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\font-awesome\webfonts\fa-brands-400.woff2'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-\u002Bq5vwKqUzFveUHZkfIF6IyBglqHL7aENHG89idYWPtE="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"109808"},{"Name":"Content-Type","Value":"font/woff2"},{"Name":"ETag","Value":"\u0022\u002Bq5vwKqUzFveUHZkfIF6IyBglqHL7aENHG89idYWPtE=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/font-awesome/webfonts/fa-regular-400.b1kkc6llyf.woff2">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\font-awesome\webfonts\fa-regular-400.woff2'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"b1kkc6llyf"},{"Name":"integrity","Value":"sha256-kWnYvnqBd\u002BWpKk0Ett5/ZQS5OFc79NpYiYccTzdtOEk="},{"Name":"label","Value":"_content/DP.BlazorDashboard/lib/font-awesome/webfonts/fa-regular-400.woff2"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"24488"},{"Name":"Content-Type","Value":"font/woff2"},{"Name":"ETag","Value":"\u0022kWnYvnqBd\u002BWpKk0Ett5/ZQS5OFc79NpYiYccTzdtOEk=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/font-awesome/webfonts/fa-regular-400.woff2">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\font-awesome\webfonts\fa-regular-400.woff2'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-kWnYvnqBd\u002BWpKk0Ett5/ZQS5OFc79NpYiYccTzdtOEk="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"24488"},{"Name":"Content-Type","Value":"font/woff2"},{"Name":"ETag","Value":"\u0022kWnYvnqBd\u002BWpKk0Ett5/ZQS5OFc79NpYiYccTzdtOEk=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/font-awesome/webfonts/fa-solid-900.0qlylnww0u.woff2">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\font-awesome\webfonts\fa-solid-900.woff2'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"0qlylnww0u"},{"Name":"integrity","Value":"sha256-iGyGESqATvHd0csgavTIxA40tzwmZSyiMUBKo1prMNk="},{"Name":"label","Value":"_content/DP.BlazorDashboard/lib/font-awesome/webfonts/fa-solid-900.woff2"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"150020"},{"Name":"Content-Type","Value":"font/woff2"},{"Name":"ETag","Value":"\u0022iGyGESqATvHd0csgavTIxA40tzwmZSyiMUBKo1prMNk=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/font-awesome/webfonts/fa-solid-900.woff2">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\font-awesome\webfonts\fa-solid-900.woff2'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-iGyGESqATvHd0csgavTIxA40tzwmZSyiMUBKo1prMNk="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"150020"},{"Name":"Content-Type","Value":"font/woff2"},{"Name":"ETag","Value":"\u0022iGyGESqATvHd0csgavTIxA40tzwmZSyiMUBKo1prMNk=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/gridstack/dist/gridstack-all.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\gridstack\dist\gridstack-all.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-4lYGz34bR3tfUovQTPaN1cposKzFfa7GfGACvMgY9jY="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"76305"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00224lYGz34bR3tfUovQTPaN1cposKzFfa7GfGACvMgY9jY=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/gridstack/dist/gridstack-all.js.map">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\gridstack\dist\gridstack-all.js.map'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-1nqsELPd8YPZamlLM0ZXSCh4kf1aQSFpw\u002BF5UckaLcc="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"357059"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u00221nqsELPd8YPZamlLM0ZXSCh4kf1aQSFpw\u002BF5UckaLcc=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/gridstack/dist/gridstack-all.js.u3yaaodp8r.map">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\gridstack\dist\gridstack-all.js.map'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"u3yaaodp8r"},{"Name":"integrity","Value":"sha256-1nqsELPd8YPZamlLM0ZXSCh4kf1aQSFpw\u002BF5UckaLcc="},{"Name":"label","Value":"_content/DP.BlazorDashboard/lib/gridstack/dist/gridstack-all.js.map"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"357059"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u00221nqsELPd8YPZamlLM0ZXSCh4kf1aQSFpw\u002BF5UckaLcc=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/gridstack/dist/gridstack-all.mfj6f0gl9n.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\gridstack\dist\gridstack-all.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"mfj6f0gl9n"},{"Name":"integrity","Value":"sha256-4lYGz34bR3tfUovQTPaN1cposKzFfa7GfGACvMgY9jY="},{"Name":"label","Value":"_content/DP.BlazorDashboard/lib/gridstack/dist/gridstack-all.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"76305"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00224lYGz34bR3tfUovQTPaN1cposKzFfa7GfGACvMgY9jY=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/gridstack/dist/gridstack.min.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\gridstack\dist\gridstack.min.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-WAIGGICIALk5q0lz\u002B5mdsorLXA5LVxOALktC3Afr4Z4="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"5651"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022WAIGGICIALk5q0lz\u002B5mdsorLXA5LVxOALktC3Afr4Z4=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/gridstack/dist/gridstack.min.kl5wivjn2c.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\gridstack\dist\gridstack.min.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"kl5wivjn2c"},{"Name":"integrity","Value":"sha256-WAIGGICIALk5q0lz\u002B5mdsorLXA5LVxOALktC3Afr4Z4="},{"Name":"label","Value":"_content/DP.BlazorDashboard/lib/gridstack/dist/gridstack.min.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"5651"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022WAIGGICIALk5q0lz\u002B5mdsorLXA5LVxOALktC3Afr4Z4=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/300.8cvggq6mir.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\300.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"8cvggq6mir"},{"Name":"integrity","Value":"sha256-WGUzq7uKfHCDYS/yHs4k9qDI8aef7\u002BSNXNzc483NmBg="},{"Name":"label","Value":"_content/DP.BlazorDashboard/lib/roboto/300.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"5519"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022WGUzq7uKfHCDYS/yHs4k9qDI8aef7\u002BSNXNzc483NmBg=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/300.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\300.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-WGUzq7uKfHCDYS/yHs4k9qDI8aef7\u002BSNXNzc483NmBg="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"5519"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022WGUzq7uKfHCDYS/yHs4k9qDI8aef7\u002BSNXNzc483NmBg=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/400.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\400.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-aUq\u002Bf35\u002B0OirTqMSC1b\u002BMpdqP0b3eD4y50QQfiM9QlE="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"5519"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022aUq\u002Bf35\u002B0OirTqMSC1b\u002BMpdqP0b3eD4y50QQfiM9QlE=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/400.vqdgopvwqo.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\400.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"vqdgopvwqo"},{"Name":"integrity","Value":"sha256-aUq\u002Bf35\u002B0OirTqMSC1b\u002BMpdqP0b3eD4y50QQfiM9QlE="},{"Name":"label","Value":"_content/DP.BlazorDashboard/lib/roboto/400.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"5519"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022aUq\u002Bf35\u002B0OirTqMSC1b\u002BMpdqP0b3eD4y50QQfiM9QlE=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/500.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\500.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-H4k4gXUmBahXtI7/e4u71GXxAZ84VPQ\u002BLmiVcR5rhko="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"5519"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022H4k4gXUmBahXtI7/e4u71GXxAZ84VPQ\u002BLmiVcR5rhko=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/500.fkonxflc3c.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\500.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"fkonxflc3c"},{"Name":"integrity","Value":"sha256-H4k4gXUmBahXtI7/e4u71GXxAZ84VPQ\u002BLmiVcR5rhko="},{"Name":"label","Value":"_content/DP.BlazorDashboard/lib/roboto/500.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"5519"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022H4k4gXUmBahXtI7/e4u71GXxAZ84VPQ\u002BLmiVcR5rhko=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/700.3dw23z1o4r.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\700.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"3dw23z1o4r"},{"Name":"integrity","Value":"sha256-V2\u002BoEKG9/7l2fPRkbWIScn8/NLbzK76VmP4pxWWnx3M="},{"Name":"label","Value":"_content/DP.BlazorDashboard/lib/roboto/700.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"5519"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022V2\u002BoEKG9/7l2fPRkbWIScn8/NLbzK76VmP4pxWWnx3M=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/700.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\700.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-V2\u002BoEKG9/7l2fPRkbWIScn8/NLbzK76VmP4pxWWnx3M="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"5519"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022V2\u002BoEKG9/7l2fPRkbWIScn8/NLbzK76VmP4pxWWnx3M=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-cyrillic-300-normal.3f3tu8hf3j.woff">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-cyrillic-300-normal.woff'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"3f3tu8hf3j"},{"Name":"integrity","Value":"sha256-j4Sv1Yncbo48hSAtB8e\u002BZ6/v\u002BYrhmEozBMV1nuC3A/s="},{"Name":"label","Value":"_content/DP.BlazorDashboard/lib/roboto/files/roboto-cyrillic-300-normal.woff"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"9780"},{"Name":"Content-Type","Value":"application/font-woff"},{"Name":"ETag","Value":"\u0022j4Sv1Yncbo48hSAtB8e\u002BZ6/v\u002BYrhmEozBMV1nuC3A/s=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-cyrillic-300-normal.woff">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-cyrillic-300-normal.woff'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-j4Sv1Yncbo48hSAtB8e\u002BZ6/v\u002BYrhmEozBMV1nuC3A/s="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"9780"},{"Name":"Content-Type","Value":"application/font-woff"},{"Name":"ETag","Value":"\u0022j4Sv1Yncbo48hSAtB8e\u002BZ6/v\u002BYrhmEozBMV1nuC3A/s=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-cyrillic-300-normal.woff2">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-cyrillic-300-normal.woff2'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-zkZQt0yslfbJSEqAjARnkH2PLn6dSBJvwBtv4ufDJUw="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"11832"},{"Name":"Content-Type","Value":"font/woff2"},{"Name":"ETag","Value":"\u0022zkZQt0yslfbJSEqAjARnkH2PLn6dSBJvwBtv4ufDJUw=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-cyrillic-300-normal.yk0t57rvsl.woff2">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-cyrillic-300-normal.woff2'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"yk0t57rvsl"},{"Name":"integrity","Value":"sha256-zkZQt0yslfbJSEqAjARnkH2PLn6dSBJvwBtv4ufDJUw="},{"Name":"label","Value":"_content/DP.BlazorDashboard/lib/roboto/files/roboto-cyrillic-300-normal.woff2"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"11832"},{"Name":"Content-Type","Value":"font/woff2"},{"Name":"ETag","Value":"\u0022zkZQt0yslfbJSEqAjARnkH2PLn6dSBJvwBtv4ufDJUw=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-cyrillic-400-normal.el0sj9ou4r.woff2">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-cyrillic-400-normal.woff2'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"el0sj9ou4r"},{"Name":"integrity","Value":"sha256-/lbQ0TessPmxd1TTZw9eyu4hhVSN2ajERTWl8ZQRfdw="},{"Name":"label","Value":"_content/DP.BlazorDashboard/lib/roboto/files/roboto-cyrillic-400-normal.woff2"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"11840"},{"Name":"Content-Type","Value":"font/woff2"},{"Name":"ETag","Value":"\u0022/lbQ0TessPmxd1TTZw9eyu4hhVSN2ajERTWl8ZQRfdw=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-cyrillic-400-normal.sdbp6xrjdd.woff">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-cyrillic-400-normal.woff'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"sdbp6xrjdd"},{"Name":"integrity","Value":"sha256-IKDORQgZ8jPUBJVsJa86d/I9kcq69S1eF5Qolk0bjew="},{"Name":"label","Value":"_content/DP.BlazorDashboard/lib/roboto/files/roboto-cyrillic-400-normal.woff"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"9728"},{"Name":"Content-Type","Value":"application/font-woff"},{"Name":"ETag","Value":"\u0022IKDORQgZ8jPUBJVsJa86d/I9kcq69S1eF5Qolk0bjew=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-cyrillic-400-normal.woff">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-cyrillic-400-normal.woff'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-IKDORQgZ8jPUBJVsJa86d/I9kcq69S1eF5Qolk0bjew="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"9728"},{"Name":"Content-Type","Value":"application/font-woff"},{"Name":"ETag","Value":"\u0022IKDORQgZ8jPUBJVsJa86d/I9kcq69S1eF5Qolk0bjew=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-cyrillic-400-normal.woff2">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-cyrillic-400-normal.woff2'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-/lbQ0TessPmxd1TTZw9eyu4hhVSN2ajERTWl8ZQRfdw="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"11840"},{"Name":"Content-Type","Value":"font/woff2"},{"Name":"ETag","Value":"\u0022/lbQ0TessPmxd1TTZw9eyu4hhVSN2ajERTWl8ZQRfdw=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-cyrillic-500-normal.0hkeda5nlj.woff2">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-cyrillic-500-normal.woff2'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"0hkeda5nlj"},{"Name":"integrity","Value":"sha256-3PsJbAo7MIm/zkdT0W7aO9E/r81YFExFn02O/UnOpYw="},{"Name":"label","Value":"_content/DP.BlazorDashboard/lib/roboto/files/roboto-cyrillic-500-normal.woff2"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"11976"},{"Name":"Content-Type","Value":"font/woff2"},{"Name":"ETag","Value":"\u00223PsJbAo7MIm/zkdT0W7aO9E/r81YFExFn02O/UnOpYw=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-cyrillic-500-normal.bh43k6xwbl.woff">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-cyrillic-500-normal.woff'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"bh43k6xwbl"},{"Name":"integrity","Value":"sha256-b7U6vrHQnqt0hsywb1gOpsLKjK1Tixx72ZmQKMqK\u002Bbc="},{"Name":"label","Value":"_content/DP.BlazorDashboard/lib/roboto/files/roboto-cyrillic-500-normal.woff"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"9900"},{"Name":"Content-Type","Value":"application/font-woff"},{"Name":"ETag","Value":"\u0022b7U6vrHQnqt0hsywb1gOpsLKjK1Tixx72ZmQKMqK\u002Bbc=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-cyrillic-500-normal.woff">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-cyrillic-500-normal.woff'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-b7U6vrHQnqt0hsywb1gOpsLKjK1Tixx72ZmQKMqK\u002Bbc="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"9900"},{"Name":"Content-Type","Value":"application/font-woff"},{"Name":"ETag","Value":"\u0022b7U6vrHQnqt0hsywb1gOpsLKjK1Tixx72ZmQKMqK\u002Bbc=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-cyrillic-500-normal.woff2">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-cyrillic-500-normal.woff2'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-3PsJbAo7MIm/zkdT0W7aO9E/r81YFExFn02O/UnOpYw="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"11976"},{"Name":"Content-Type","Value":"font/woff2"},{"Name":"ETag","Value":"\u00223PsJbAo7MIm/zkdT0W7aO9E/r81YFExFn02O/UnOpYw=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-cyrillic-700-normal.0ollq7wi4j.woff">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-cyrillic-700-normal.woff'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"0ollq7wi4j"},{"Name":"integrity","Value":"sha256-EEnpbB3rV4rh9Vr8TecE2pdhztDoNaud9ASvRRmkZSk="},{"Name":"label","Value":"_content/DP.BlazorDashboard/lib/roboto/files/roboto-cyrillic-700-normal.woff"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"9900"},{"Name":"Content-Type","Value":"application/font-woff"},{"Name":"ETag","Value":"\u0022EEnpbB3rV4rh9Vr8TecE2pdhztDoNaud9ASvRRmkZSk=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-cyrillic-700-normal.hd9o1jhq8f.woff2">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-cyrillic-700-normal.woff2'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"hd9o1jhq8f"},{"Name":"integrity","Value":"sha256-daJbWL5hu7BYx3dI08SVJpyMy6FyXcM3yhKH8PtpeVI="},{"Name":"label","Value":"_content/DP.BlazorDashboard/lib/roboto/files/roboto-cyrillic-700-normal.woff2"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"11968"},{"Name":"Content-Type","Value":"font/woff2"},{"Name":"ETag","Value":"\u0022daJbWL5hu7BYx3dI08SVJpyMy6FyXcM3yhKH8PtpeVI=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-cyrillic-700-normal.woff">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-cyrillic-700-normal.woff'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-EEnpbB3rV4rh9Vr8TecE2pdhztDoNaud9ASvRRmkZSk="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"9900"},{"Name":"Content-Type","Value":"application/font-woff"},{"Name":"ETag","Value":"\u0022EEnpbB3rV4rh9Vr8TecE2pdhztDoNaud9ASvRRmkZSk=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-cyrillic-700-normal.woff2">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-cyrillic-700-normal.woff2'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-daJbWL5hu7BYx3dI08SVJpyMy6FyXcM3yhKH8PtpeVI="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"11968"},{"Name":"Content-Type","Value":"font/woff2"},{"Name":"ETag","Value":"\u0022daJbWL5hu7BYx3dI08SVJpyMy6FyXcM3yhKH8PtpeVI=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-cyrillic-ext-300-normal.f3dr2aqm55.woff">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-cyrillic-ext-300-normal.woff'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"f3dr2aqm55"},{"Name":"integrity","Value":"sha256-9bpUWoeKW0SJ6Vyt5D47bHyEsMhOrddUdAElq/8VnVQ="},{"Name":"label","Value":"_content/DP.BlazorDashboard/lib/roboto/files/roboto-cyrillic-ext-300-normal.woff"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"15384"},{"Name":"Content-Type","Value":"application/font-woff"},{"Name":"ETag","Value":"\u00229bpUWoeKW0SJ6Vyt5D47bHyEsMhOrddUdAElq/8VnVQ=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-cyrillic-ext-300-normal.ncdzlcq0gp.woff2">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-cyrillic-ext-300-normal.woff2'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ncdzlcq0gp"},{"Name":"integrity","Value":"sha256-qUyB0LP2u5f9l8/Pv6Xcr4U6oCyA1RJyguh43tM39yc="},{"Name":"label","Value":"_content/DP.BlazorDashboard/lib/roboto/files/roboto-cyrillic-ext-300-normal.woff2"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"16912"},{"Name":"Content-Type","Value":"font/woff2"},{"Name":"ETag","Value":"\u0022qUyB0LP2u5f9l8/Pv6Xcr4U6oCyA1RJyguh43tM39yc=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-cyrillic-ext-300-normal.woff">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-cyrillic-ext-300-normal.woff'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-9bpUWoeKW0SJ6Vyt5D47bHyEsMhOrddUdAElq/8VnVQ="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"15384"},{"Name":"Content-Type","Value":"application/font-woff"},{"Name":"ETag","Value":"\u00229bpUWoeKW0SJ6Vyt5D47bHyEsMhOrddUdAElq/8VnVQ=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-cyrillic-ext-300-normal.woff2">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-cyrillic-ext-300-normal.woff2'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-qUyB0LP2u5f9l8/Pv6Xcr4U6oCyA1RJyguh43tM39yc="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"16912"},{"Name":"Content-Type","Value":"font/woff2"},{"Name":"ETag","Value":"\u0022qUyB0LP2u5f9l8/Pv6Xcr4U6oCyA1RJyguh43tM39yc=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-cyrillic-ext-400-normal.2hvop30jn4.woff2">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-cyrillic-ext-400-normal.woff2'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"2hvop30jn4"},{"Name":"integrity","Value":"sha256-quV3eY/z9Onh2WQKl96jmmWVeCdlSK9RvSr1VmyGvM4="},{"Name":"label","Value":"_content/DP.BlazorDashboard/lib/roboto/files/roboto-cyrillic-ext-400-normal.woff2"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"16848"},{"Name":"Content-Type","Value":"font/woff2"},{"Name":"ETag","Value":"\u0022quV3eY/z9Onh2WQKl96jmmWVeCdlSK9RvSr1VmyGvM4=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-cyrillic-ext-400-normal.woff">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-cyrillic-ext-400-normal.woff'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-gofh\u002BjnCxQLc2ipoj9FJh\u002B8oQGWBGnGOVNrBfSanvJ4="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"15396"},{"Name":"Content-Type","Value":"application/font-woff"},{"Name":"ETag","Value":"\u0022gofh\u002BjnCxQLc2ipoj9FJh\u002B8oQGWBGnGOVNrBfSanvJ4=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-cyrillic-ext-400-normal.woff2">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-cyrillic-ext-400-normal.woff2'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-quV3eY/z9Onh2WQKl96jmmWVeCdlSK9RvSr1VmyGvM4="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"16848"},{"Name":"Content-Type","Value":"font/woff2"},{"Name":"ETag","Value":"\u0022quV3eY/z9Onh2WQKl96jmmWVeCdlSK9RvSr1VmyGvM4=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-cyrillic-ext-400-normal.yf4okuc7xd.woff">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-cyrillic-ext-400-normal.woff'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"yf4okuc7xd"},{"Name":"integrity","Value":"sha256-gofh\u002BjnCxQLc2ipoj9FJh\u002B8oQGWBGnGOVNrBfSanvJ4="},{"Name":"label","Value":"_content/DP.BlazorDashboard/lib/roboto/files/roboto-cyrillic-ext-400-normal.woff"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"15396"},{"Name":"Content-Type","Value":"application/font-woff"},{"Name":"ETag","Value":"\u0022gofh\u002BjnCxQLc2ipoj9FJh\u002B8oQGWBGnGOVNrBfSanvJ4=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-cyrillic-ext-500-normal.ht9oqox2dw.woff">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-cyrillic-ext-500-normal.woff'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ht9oqox2dw"},{"Name":"integrity","Value":"sha256-S24ag8UjHlKEURKoKYjuGoODBLF7xXWK3ldJ/R7UZC4="},{"Name":"label","Value":"_content/DP.BlazorDashboard/lib/roboto/files/roboto-cyrillic-ext-500-normal.woff"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"15520"},{"Name":"Content-Type","Value":"application/font-woff"},{"Name":"ETag","Value":"\u0022S24ag8UjHlKEURKoKYjuGoODBLF7xXWK3ldJ/R7UZC4=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-cyrillic-ext-500-normal.iqak8lvctd.woff2">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-cyrillic-ext-500-normal.woff2'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"iqak8lvctd"},{"Name":"integrity","Value":"sha256-piCGC2PenEDayaWbAJTGGumy4XuPxjKJmUaJTLw71uM="},{"Name":"label","Value":"_content/DP.BlazorDashboard/lib/roboto/files/roboto-cyrillic-ext-500-normal.woff2"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"17160"},{"Name":"Content-Type","Value":"font/woff2"},{"Name":"ETag","Value":"\u0022piCGC2PenEDayaWbAJTGGumy4XuPxjKJmUaJTLw71uM=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-cyrillic-ext-500-normal.woff">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-cyrillic-ext-500-normal.woff'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-S24ag8UjHlKEURKoKYjuGoODBLF7xXWK3ldJ/R7UZC4="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"15520"},{"Name":"Content-Type","Value":"application/font-woff"},{"Name":"ETag","Value":"\u0022S24ag8UjHlKEURKoKYjuGoODBLF7xXWK3ldJ/R7UZC4=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-cyrillic-ext-500-normal.woff2">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-cyrillic-ext-500-normal.woff2'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-piCGC2PenEDayaWbAJTGGumy4XuPxjKJmUaJTLw71uM="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"17160"},{"Name":"Content-Type","Value":"font/woff2"},{"Name":"ETag","Value":"\u0022piCGC2PenEDayaWbAJTGGumy4XuPxjKJmUaJTLw71uM=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-cyrillic-ext-700-normal.d9iz1vgyzs.woff">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-cyrillic-ext-700-normal.woff'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"d9iz1vgyzs"},{"Name":"integrity","Value":"sha256-MUQVBIOA/hlE\u002B1Y6YIFVLaxM5cF4wWbQ7S\u002BZ45mi7C8="},{"Name":"label","Value":"_content/DP.BlazorDashboard/lib/roboto/files/roboto-cyrillic-ext-700-normal.woff"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"15508"},{"Name":"Content-Type","Value":"application/font-woff"},{"Name":"ETag","Value":"\u0022MUQVBIOA/hlE\u002B1Y6YIFVLaxM5cF4wWbQ7S\u002BZ45mi7C8=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-cyrillic-ext-700-normal.woff">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-cyrillic-ext-700-normal.woff'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-MUQVBIOA/hlE\u002B1Y6YIFVLaxM5cF4wWbQ7S\u002BZ45mi7C8="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"15508"},{"Name":"Content-Type","Value":"application/font-woff"},{"Name":"ETag","Value":"\u0022MUQVBIOA/hlE\u002B1Y6YIFVLaxM5cF4wWbQ7S\u002BZ45mi7C8=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-cyrillic-ext-700-normal.woff2">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-cyrillic-ext-700-normal.woff2'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-xFc/WWRgdpT7CDy9mLB/9xWyM\u002BoJ9Ofnu9fArBUvjlQ="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"17112"},{"Name":"Content-Type","Value":"font/woff2"},{"Name":"ETag","Value":"\u0022xFc/WWRgdpT7CDy9mLB/9xWyM\u002BoJ9Ofnu9fArBUvjlQ=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-cyrillic-ext-700-normal.wzfhxfmyvy.woff2">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-cyrillic-ext-700-normal.woff2'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"wzfhxfmyvy"},{"Name":"integrity","Value":"sha256-xFc/WWRgdpT7CDy9mLB/9xWyM\u002BoJ9Ofnu9fArBUvjlQ="},{"Name":"label","Value":"_content/DP.BlazorDashboard/lib/roboto/files/roboto-cyrillic-ext-700-normal.woff2"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"17112"},{"Name":"Content-Type","Value":"font/woff2"},{"Name":"ETag","Value":"\u0022xFc/WWRgdpT7CDy9mLB/9xWyM\u002BoJ9Ofnu9fArBUvjlQ=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-greek-300-normal.bluto1ihf7.woff2">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-greek-300-normal.woff2'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"bluto1ihf7"},{"Name":"integrity","Value":"sha256-4aOMyP9UbT3xRZyJ34e46q0KQM1ZsWa1vIRkKxFU1ds="},{"Name":"label","Value":"_content/DP.BlazorDashboard/lib/roboto/files/roboto-greek-300-normal.woff2"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"9560"},{"Name":"Content-Type","Value":"font/woff2"},{"Name":"ETag","Value":"\u00224aOMyP9UbT3xRZyJ34e46q0KQM1ZsWa1vIRkKxFU1ds=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-greek-300-normal.pbxbclacn2.woff">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-greek-300-normal.woff'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"pbxbclacn2"},{"Name":"integrity","Value":"sha256-dR2MJAEAoaE6e1hAwsQ9OL901qHCD42P0fjwvaJkn1w="},{"Name":"label","Value":"_content/DP.BlazorDashboard/lib/roboto/files/roboto-greek-300-normal.woff"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"7480"},{"Name":"Content-Type","Value":"application/font-woff"},{"Name":"ETag","Value":"\u0022dR2MJAEAoaE6e1hAwsQ9OL901qHCD42P0fjwvaJkn1w=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-greek-300-normal.woff">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-greek-300-normal.woff'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-dR2MJAEAoaE6e1hAwsQ9OL901qHCD42P0fjwvaJkn1w="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"7480"},{"Name":"Content-Type","Value":"application/font-woff"},{"Name":"ETag","Value":"\u0022dR2MJAEAoaE6e1hAwsQ9OL901qHCD42P0fjwvaJkn1w=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-greek-300-normal.woff2">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-greek-300-normal.woff2'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-4aOMyP9UbT3xRZyJ34e46q0KQM1ZsWa1vIRkKxFU1ds="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"9560"},{"Name":"Content-Type","Value":"font/woff2"},{"Name":"ETag","Value":"\u00224aOMyP9UbT3xRZyJ34e46q0KQM1ZsWa1vIRkKxFU1ds=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-greek-400-normal.4e1ast0e2x.woff2">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-greek-400-normal.woff2'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"4e1ast0e2x"},{"Name":"integrity","Value":"sha256-dCpJBHCtWt2BqGFGAvWWCdsR6/jzH19Ybv8rNMf7Xac="},{"Name":"label","Value":"_content/DP.BlazorDashboard/lib/roboto/files/roboto-greek-400-normal.woff2"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"9644"},{"Name":"Content-Type","Value":"font/woff2"},{"Name":"ETag","Value":"\u0022dCpJBHCtWt2BqGFGAvWWCdsR6/jzH19Ybv8rNMf7Xac=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-greek-400-normal.qzayvn2xr5.woff">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-greek-400-normal.woff'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"qzayvn2xr5"},{"Name":"integrity","Value":"sha256-Jger/PWNTeV7yOYyFdnpVOXia5qd1xm6ugRj11Hr0oU="},{"Name":"label","Value":"_content/DP.BlazorDashboard/lib/roboto/files/roboto-greek-400-normal.woff"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"7468"},{"Name":"Content-Type","Value":"application/font-woff"},{"Name":"ETag","Value":"\u0022Jger/PWNTeV7yOYyFdnpVOXia5qd1xm6ugRj11Hr0oU=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-greek-400-normal.woff">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-greek-400-normal.woff'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Jger/PWNTeV7yOYyFdnpVOXia5qd1xm6ugRj11Hr0oU="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"7468"},{"Name":"Content-Type","Value":"application/font-woff"},{"Name":"ETag","Value":"\u0022Jger/PWNTeV7yOYyFdnpVOXia5qd1xm6ugRj11Hr0oU=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-greek-400-normal.woff2">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-greek-400-normal.woff2'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-dCpJBHCtWt2BqGFGAvWWCdsR6/jzH19Ybv8rNMf7Xac="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"9644"},{"Name":"Content-Type","Value":"font/woff2"},{"Name":"ETag","Value":"\u0022dCpJBHCtWt2BqGFGAvWWCdsR6/jzH19Ybv8rNMf7Xac=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-greek-500-normal.2vr4s59uif.woff2">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-greek-500-normal.woff2'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"2vr4s59uif"},{"Name":"integrity","Value":"sha256-8rkofocOZWObw0r4oiZXWzdImV3U\u002B\u002B2HMTbr0ZTCJFY="},{"Name":"label","Value":"_content/DP.BlazorDashboard/lib/roboto/files/roboto-greek-500-normal.woff2"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"9640"},{"Name":"Content-Type","Value":"font/woff2"},{"Name":"ETag","Value":"\u00228rkofocOZWObw0r4oiZXWzdImV3U\u002B\u002B2HMTbr0ZTCJFY=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-greek-500-normal.cxxknfuefu.woff">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-greek-500-normal.woff'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"cxxknfuefu"},{"Name":"integrity","Value":"sha256-wFtee2lfpK5XQudmSNwzQMTxXrbFO3sGqYU8LNY0UQI="},{"Name":"label","Value":"_content/DP.BlazorDashboard/lib/roboto/files/roboto-greek-500-normal.woff"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"7512"},{"Name":"Content-Type","Value":"application/font-woff"},{"Name":"ETag","Value":"\u0022wFtee2lfpK5XQudmSNwzQMTxXrbFO3sGqYU8LNY0UQI=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-greek-500-normal.woff">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-greek-500-normal.woff'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-wFtee2lfpK5XQudmSNwzQMTxXrbFO3sGqYU8LNY0UQI="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"7512"},{"Name":"Content-Type","Value":"application/font-woff"},{"Name":"ETag","Value":"\u0022wFtee2lfpK5XQudmSNwzQMTxXrbFO3sGqYU8LNY0UQI=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-greek-500-normal.woff2">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-greek-500-normal.woff2'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-8rkofocOZWObw0r4oiZXWzdImV3U\u002B\u002B2HMTbr0ZTCJFY="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"9640"},{"Name":"Content-Type","Value":"font/woff2"},{"Name":"ETag","Value":"\u00228rkofocOZWObw0r4oiZXWzdImV3U\u002B\u002B2HMTbr0ZTCJFY=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-greek-700-normal.d74ruf2n0r.woff">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-greek-700-normal.woff'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"d74ruf2n0r"},{"Name":"integrity","Value":"sha256-91dKhXc4kp\u002B5ZtE8L4WS7Iba4jJWontqAhcqrtk8v0E="},{"Name":"label","Value":"_content/DP.BlazorDashboard/lib/roboto/files/roboto-greek-700-normal.woff"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"7488"},{"Name":"Content-Type","Value":"application/font-woff"},{"Name":"ETag","Value":"\u002291dKhXc4kp\u002B5ZtE8L4WS7Iba4jJWontqAhcqrtk8v0E=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-greek-700-normal.fjyt51ef48.woff2">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-greek-700-normal.woff2'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"fjyt51ef48"},{"Name":"integrity","Value":"sha256-G70cfrVQFo06NJ5J42wqRAsDk1oveuGPiTUPXt809Qk="},{"Name":"label","Value":"_content/DP.BlazorDashboard/lib/roboto/files/roboto-greek-700-normal.woff2"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"9680"},{"Name":"Content-Type","Value":"font/woff2"},{"Name":"ETag","Value":"\u0022G70cfrVQFo06NJ5J42wqRAsDk1oveuGPiTUPXt809Qk=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-greek-700-normal.woff">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-greek-700-normal.woff'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-91dKhXc4kp\u002B5ZtE8L4WS7Iba4jJWontqAhcqrtk8v0E="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"7488"},{"Name":"Content-Type","Value":"application/font-woff"},{"Name":"ETag","Value":"\u002291dKhXc4kp\u002B5ZtE8L4WS7Iba4jJWontqAhcqrtk8v0E=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-greek-700-normal.woff2">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-greek-700-normal.woff2'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-G70cfrVQFo06NJ5J42wqRAsDk1oveuGPiTUPXt809Qk="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"9680"},{"Name":"Content-Type","Value":"font/woff2"},{"Name":"ETag","Value":"\u0022G70cfrVQFo06NJ5J42wqRAsDk1oveuGPiTUPXt809Qk=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-greek-ext-300-normal.adcf6qoddk.woff">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-greek-ext-300-normal.woff'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"adcf6qoddk"},{"Name":"integrity","Value":"sha256-XhoZsdsXIHEkhdGZU0ycbXFbM3MnlNiWI01qC8NfpF4="},{"Name":"label","Value":"_content/DP.BlazorDashboard/lib/roboto/files/roboto-greek-ext-300-normal.woff"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1452"},{"Name":"Content-Type","Value":"application/font-woff"},{"Name":"ETag","Value":"\u0022XhoZsdsXIHEkhdGZU0ycbXFbM3MnlNiWI01qC8NfpF4=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-greek-ext-300-normal.fyyr8g4yy9.woff2">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-greek-ext-300-normal.woff2'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"fyyr8g4yy9"},{"Name":"integrity","Value":"sha256-t/FxO1ZfdpsGBSkcwoECwB49i\u002BSyxvsc41t6rNEcDRw="},{"Name":"label","Value":"_content/DP.BlazorDashboard/lib/roboto/files/roboto-greek-ext-300-normal.woff2"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3656"},{"Name":"Content-Type","Value":"font/woff2"},{"Name":"ETag","Value":"\u0022t/FxO1ZfdpsGBSkcwoECwB49i\u002BSyxvsc41t6rNEcDRw=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-greek-ext-300-normal.woff">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-greek-ext-300-normal.woff'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-XhoZsdsXIHEkhdGZU0ycbXFbM3MnlNiWI01qC8NfpF4="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1452"},{"Name":"Content-Type","Value":"application/font-woff"},{"Name":"ETag","Value":"\u0022XhoZsdsXIHEkhdGZU0ycbXFbM3MnlNiWI01qC8NfpF4=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-greek-ext-300-normal.woff2">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-greek-ext-300-normal.woff2'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-t/FxO1ZfdpsGBSkcwoECwB49i\u002BSyxvsc41t6rNEcDRw="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"3656"},{"Name":"Content-Type","Value":"font/woff2"},{"Name":"ETag","Value":"\u0022t/FxO1ZfdpsGBSkcwoECwB49i\u002BSyxvsc41t6rNEcDRw=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-greek-ext-400-normal.aw8yhiftvd.woff2">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-greek-ext-400-normal.woff2'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"aw8yhiftvd"},{"Name":"integrity","Value":"sha256-djWybKx5I6KpSthn1Br\u002BTMke69z/xMsoKnvzS7sZWuc="},{"Name":"label","Value":"_content/DP.BlazorDashboard/lib/roboto/files/roboto-greek-ext-400-normal.woff2"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3676"},{"Name":"Content-Type","Value":"font/woff2"},{"Name":"ETag","Value":"\u0022djWybKx5I6KpSthn1Br\u002BTMke69z/xMsoKnvzS7sZWuc=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-greek-ext-400-normal.q4muuj82k5.woff">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-greek-ext-400-normal.woff'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"q4muuj82k5"},{"Name":"integrity","Value":"sha256-dioS8vtMxHqDT6ZkGiTbopAFhOzPyutZ3xm421d41Lk="},{"Name":"label","Value":"_content/DP.BlazorDashboard/lib/roboto/files/roboto-greek-ext-400-normal.woff"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1476"},{"Name":"Content-Type","Value":"application/font-woff"},{"Name":"ETag","Value":"\u0022dioS8vtMxHqDT6ZkGiTbopAFhOzPyutZ3xm421d41Lk=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-greek-ext-400-normal.woff">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-greek-ext-400-normal.woff'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-dioS8vtMxHqDT6ZkGiTbopAFhOzPyutZ3xm421d41Lk="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1476"},{"Name":"Content-Type","Value":"application/font-woff"},{"Name":"ETag","Value":"\u0022dioS8vtMxHqDT6ZkGiTbopAFhOzPyutZ3xm421d41Lk=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-greek-ext-400-normal.woff2">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-greek-ext-400-normal.woff2'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-djWybKx5I6KpSthn1Br\u002BTMke69z/xMsoKnvzS7sZWuc="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"3676"},{"Name":"Content-Type","Value":"font/woff2"},{"Name":"ETag","Value":"\u0022djWybKx5I6KpSthn1Br\u002BTMke69z/xMsoKnvzS7sZWuc=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-greek-ext-500-normal.1eg7i5djp9.woff">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-greek-ext-500-normal.woff'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"1eg7i5djp9"},{"Name":"integrity","Value":"sha256-uWQ3OeSFdCFpDGO5n22NJ86ZGdvngUTHDvAhyGCvi4o="},{"Name":"label","Value":"_content/DP.BlazorDashboard/lib/roboto/files/roboto-greek-ext-500-normal.woff"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1464"},{"Name":"Content-Type","Value":"application/font-woff"},{"Name":"ETag","Value":"\u0022uWQ3OeSFdCFpDGO5n22NJ86ZGdvngUTHDvAhyGCvi4o=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-greek-ext-500-normal.phujl33wmi.woff2">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-greek-ext-500-normal.woff2'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"phujl33wmi"},{"Name":"integrity","Value":"sha256-4400ZfLIv2fMUxtqaEhLAUQanAMsLEpvZNN11zJnhBU="},{"Name":"label","Value":"_content/DP.BlazorDashboard/lib/roboto/files/roboto-greek-ext-500-normal.woff2"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3692"},{"Name":"Content-Type","Value":"font/woff2"},{"Name":"ETag","Value":"\u00224400ZfLIv2fMUxtqaEhLAUQanAMsLEpvZNN11zJnhBU=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-greek-ext-500-normal.woff">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-greek-ext-500-normal.woff'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-uWQ3OeSFdCFpDGO5n22NJ86ZGdvngUTHDvAhyGCvi4o="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1464"},{"Name":"Content-Type","Value":"application/font-woff"},{"Name":"ETag","Value":"\u0022uWQ3OeSFdCFpDGO5n22NJ86ZGdvngUTHDvAhyGCvi4o=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-greek-ext-500-normal.woff2">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-greek-ext-500-normal.woff2'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-4400ZfLIv2fMUxtqaEhLAUQanAMsLEpvZNN11zJnhBU="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"3692"},{"Name":"Content-Type","Value":"font/woff2"},{"Name":"ETag","Value":"\u00224400ZfLIv2fMUxtqaEhLAUQanAMsLEpvZNN11zJnhBU=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-greek-ext-700-normal.f84d0qlr6l.woff">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-greek-ext-700-normal.woff'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"f84d0qlr6l"},{"Name":"integrity","Value":"sha256-UfFKy6ys8eidipt181IZymRA3cLRmVtHFdnsWYwYzg0="},{"Name":"label","Value":"_content/DP.BlazorDashboard/lib/roboto/files/roboto-greek-ext-700-normal.woff"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1452"},{"Name":"Content-Type","Value":"application/font-woff"},{"Name":"ETag","Value":"\u0022UfFKy6ys8eidipt181IZymRA3cLRmVtHFdnsWYwYzg0=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-greek-ext-700-normal.s7z5an3l01.woff2">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-greek-ext-700-normal.woff2'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"s7z5an3l01"},{"Name":"integrity","Value":"sha256-iLfF5hkCq4ZpE1akRRflfves51STbdYTIZkaS43Y\u002B/A="},{"Name":"label","Value":"_content/DP.BlazorDashboard/lib/roboto/files/roboto-greek-ext-700-normal.woff2"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3660"},{"Name":"Content-Type","Value":"font/woff2"},{"Name":"ETag","Value":"\u0022iLfF5hkCq4ZpE1akRRflfves51STbdYTIZkaS43Y\u002B/A=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-greek-ext-700-normal.woff">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-greek-ext-700-normal.woff'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-UfFKy6ys8eidipt181IZymRA3cLRmVtHFdnsWYwYzg0="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1452"},{"Name":"Content-Type","Value":"application/font-woff"},{"Name":"ETag","Value":"\u0022UfFKy6ys8eidipt181IZymRA3cLRmVtHFdnsWYwYzg0=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-greek-ext-700-normal.woff2">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-greek-ext-700-normal.woff2'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-iLfF5hkCq4ZpE1akRRflfves51STbdYTIZkaS43Y\u002B/A="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"3660"},{"Name":"Content-Type","Value":"font/woff2"},{"Name":"ETag","Value":"\u0022iLfF5hkCq4ZpE1akRRflfves51STbdYTIZkaS43Y\u002B/A=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-latin-300-normal.l0meos4qta.woff">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-latin-300-normal.woff'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"l0meos4qta"},{"Name":"integrity","Value":"sha256-9S6vIObmzgoLgjQcGGVVk5nhCjZnCi4T0TGumEgEN4k="},{"Name":"label","Value":"_content/DP.BlazorDashboard/lib/roboto/files/roboto-latin-300-normal.woff"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"19792"},{"Name":"Content-Type","Value":"application/font-woff"},{"Name":"ETag","Value":"\u00229S6vIObmzgoLgjQcGGVVk5nhCjZnCi4T0TGumEgEN4k=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-latin-300-normal.mfuzk9ec0i.woff2">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-latin-300-normal.woff2'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"mfuzk9ec0i"},{"Name":"integrity","Value":"sha256-LkOAKp0VVtvjYMIuK4Wll\u002BWZSj1ogf7bVEE2w3De8F4="},{"Name":"label","Value":"_content/DP.BlazorDashboard/lib/roboto/files/roboto-latin-300-normal.woff2"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"20712"},{"Name":"Content-Type","Value":"font/woff2"},{"Name":"ETag","Value":"\u0022LkOAKp0VVtvjYMIuK4Wll\u002BWZSj1ogf7bVEE2w3De8F4=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-latin-300-normal.woff">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-latin-300-normal.woff'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-9S6vIObmzgoLgjQcGGVVk5nhCjZnCi4T0TGumEgEN4k="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"19792"},{"Name":"Content-Type","Value":"application/font-woff"},{"Name":"ETag","Value":"\u00229S6vIObmzgoLgjQcGGVVk5nhCjZnCi4T0TGumEgEN4k=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-latin-300-normal.woff2">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-latin-300-normal.woff2'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-LkOAKp0VVtvjYMIuK4Wll\u002BWZSj1ogf7bVEE2w3De8F4="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"20712"},{"Name":"Content-Type","Value":"font/woff2"},{"Name":"ETag","Value":"\u0022LkOAKp0VVtvjYMIuK4Wll\u002BWZSj1ogf7bVEE2w3De8F4=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-latin-400-normal.09q4fk3qha.woff2">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-latin-400-normal.woff2'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"09q4fk3qha"},{"Name":"integrity","Value":"sha256-5EwR9INL3U1rbae47l6uvIrLQSUM1rzlzILqgmIUDqo="},{"Name":"label","Value":"_content/DP.BlazorDashboard/lib/roboto/files/roboto-latin-400-normal.woff2"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"20612"},{"Name":"Content-Type","Value":"font/woff2"},{"Name":"ETag","Value":"\u00225EwR9INL3U1rbae47l6uvIrLQSUM1rzlzILqgmIUDqo=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-latin-400-normal.gsjpjsdg0u.woff">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-latin-400-normal.woff'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"gsjpjsdg0u"},{"Name":"integrity","Value":"sha256-kBzNHYO6nRniupBJZNpWmjxhxtZSvTnRui\u002BG8mk26Mk="},{"Name":"label","Value":"_content/DP.BlazorDashboard/lib/roboto/files/roboto-latin-400-normal.woff"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"19572"},{"Name":"Content-Type","Value":"application/font-woff"},{"Name":"ETag","Value":"\u0022kBzNHYO6nRniupBJZNpWmjxhxtZSvTnRui\u002BG8mk26Mk=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-latin-400-normal.woff">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-latin-400-normal.woff'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-kBzNHYO6nRniupBJZNpWmjxhxtZSvTnRui\u002BG8mk26Mk="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"19572"},{"Name":"Content-Type","Value":"application/font-woff"},{"Name":"ETag","Value":"\u0022kBzNHYO6nRniupBJZNpWmjxhxtZSvTnRui\u002BG8mk26Mk=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-latin-400-normal.woff2">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-latin-400-normal.woff2'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-5EwR9INL3U1rbae47l6uvIrLQSUM1rzlzILqgmIUDqo="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"20612"},{"Name":"Content-Type","Value":"font/woff2"},{"Name":"ETag","Value":"\u00225EwR9INL3U1rbae47l6uvIrLQSUM1rzlzILqgmIUDqo=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-latin-500-normal.752q9ds2i7.woff">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-latin-500-normal.woff'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"752q9ds2i7"},{"Name":"integrity","Value":"sha256-W8qDvLZnGLNEZUc8OvAoMrE2fo/JlAZRCpkkua/v\u002B60="},{"Name":"label","Value":"_content/DP.BlazorDashboard/lib/roboto/files/roboto-latin-500-normal.woff"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"19668"},{"Name":"Content-Type","Value":"application/font-woff"},{"Name":"ETag","Value":"\u0022W8qDvLZnGLNEZUc8OvAoMrE2fo/JlAZRCpkkua/v\u002B60=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-latin-500-normal.fff8d8cpmz.woff2">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-latin-500-normal.woff2'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"fff8d8cpmz"},{"Name":"integrity","Value":"sha256-5bKcNrLnovTbWDBzWfpXQAS\u002BQ9OXkOS3o8\u002BAp7Fui7Y="},{"Name":"label","Value":"_content/DP.BlazorDashboard/lib/roboto/files/roboto-latin-500-normal.woff2"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"20928"},{"Name":"Content-Type","Value":"font/woff2"},{"Name":"ETag","Value":"\u00225bKcNrLnovTbWDBzWfpXQAS\u002BQ9OXkOS3o8\u002BAp7Fui7Y=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-latin-500-normal.woff">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-latin-500-normal.woff'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-W8qDvLZnGLNEZUc8OvAoMrE2fo/JlAZRCpkkua/v\u002B60="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"19668"},{"Name":"Content-Type","Value":"application/font-woff"},{"Name":"ETag","Value":"\u0022W8qDvLZnGLNEZUc8OvAoMrE2fo/JlAZRCpkkua/v\u002B60=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-latin-500-normal.woff2">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-latin-500-normal.woff2'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-5bKcNrLnovTbWDBzWfpXQAS\u002BQ9OXkOS3o8\u002BAp7Fui7Y="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"20928"},{"Name":"Content-Type","Value":"font/woff2"},{"Name":"ETag","Value":"\u00225bKcNrLnovTbWDBzWfpXQAS\u002BQ9OXkOS3o8\u002BAp7Fui7Y=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-latin-700-normal.ful925ep70.woff">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-latin-700-normal.woff'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ful925ep70"},{"Name":"integrity","Value":"sha256-KZPiso25iQWHcIOfDJFgnh99h9syLmt6z\u002BeABCSpHoY="},{"Name":"label","Value":"_content/DP.BlazorDashboard/lib/roboto/files/roboto-latin-700-normal.woff"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"19724"},{"Name":"Content-Type","Value":"application/font-woff"},{"Name":"ETag","Value":"\u0022KZPiso25iQWHcIOfDJFgnh99h9syLmt6z\u002BeABCSpHoY=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-latin-700-normal.m6mm1exkjq.woff2">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-latin-700-normal.woff2'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"m6mm1exkjq"},{"Name":"integrity","Value":"sha256-zsLHcq3l/s55W7GO7quGMjRxrL2T/iY5pAq6ZE\u002BfJNs="},{"Name":"label","Value":"_content/DP.BlazorDashboard/lib/roboto/files/roboto-latin-700-normal.woff2"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"20996"},{"Name":"Content-Type","Value":"font/woff2"},{"Name":"ETag","Value":"\u0022zsLHcq3l/s55W7GO7quGMjRxrL2T/iY5pAq6ZE\u002BfJNs=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-latin-700-normal.woff">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-latin-700-normal.woff'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-KZPiso25iQWHcIOfDJFgnh99h9syLmt6z\u002BeABCSpHoY="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"19724"},{"Name":"Content-Type","Value":"application/font-woff"},{"Name":"ETag","Value":"\u0022KZPiso25iQWHcIOfDJFgnh99h9syLmt6z\u002BeABCSpHoY=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-latin-700-normal.woff2">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-latin-700-normal.woff2'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-zsLHcq3l/s55W7GO7quGMjRxrL2T/iY5pAq6ZE\u002BfJNs="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"20996"},{"Name":"Content-Type","Value":"font/woff2"},{"Name":"ETag","Value":"\u0022zsLHcq3l/s55W7GO7quGMjRxrL2T/iY5pAq6ZE\u002BfJNs=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-latin-ext-300-normal.heyqmow8zs.woff2">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-latin-ext-300-normal.woff2'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"heyqmow8zs"},{"Name":"integrity","Value":"sha256-qWbtmoRM1gtW1OGzGwBR/tEbpPWxdFfHSEbGQ3/63QI="},{"Name":"label","Value":"_content/DP.BlazorDashboard/lib/roboto/files/roboto-latin-ext-300-normal.woff2"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"13736"},{"Name":"Content-Type","Value":"font/woff2"},{"Name":"ETag","Value":"\u0022qWbtmoRM1gtW1OGzGwBR/tEbpPWxdFfHSEbGQ3/63QI=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-latin-ext-300-normal.qt3au6p6kz.woff">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-latin-ext-300-normal.woff'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"qt3au6p6kz"},{"Name":"integrity","Value":"sha256-Igga/J6nvHyJtbDQ5PYjTLy94rdAE7P11V0PGI03tXg="},{"Name":"label","Value":"_content/DP.BlazorDashboard/lib/roboto/files/roboto-latin-ext-300-normal.woff"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"12584"},{"Name":"Content-Type","Value":"application/font-woff"},{"Name":"ETag","Value":"\u0022Igga/J6nvHyJtbDQ5PYjTLy94rdAE7P11V0PGI03tXg=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-latin-ext-300-normal.woff">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-latin-ext-300-normal.woff'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Igga/J6nvHyJtbDQ5PYjTLy94rdAE7P11V0PGI03tXg="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"12584"},{"Name":"Content-Type","Value":"application/font-woff"},{"Name":"ETag","Value":"\u0022Igga/J6nvHyJtbDQ5PYjTLy94rdAE7P11V0PGI03tXg=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-latin-ext-300-normal.woff2">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-latin-ext-300-normal.woff2'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-qWbtmoRM1gtW1OGzGwBR/tEbpPWxdFfHSEbGQ3/63QI="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"13736"},{"Name":"Content-Type","Value":"font/woff2"},{"Name":"ETag","Value":"\u0022qWbtmoRM1gtW1OGzGwBR/tEbpPWxdFfHSEbGQ3/63QI=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-latin-ext-400-normal.hvhinqt3dm.woff2">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-latin-ext-400-normal.woff2'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"hvhinqt3dm"},{"Name":"integrity","Value":"sha256-/dlTwogVmh8UmRFyDYoZ\u002BtF9yA8aBgmUjPoUWMNoiZ0="},{"Name":"label","Value":"_content/DP.BlazorDashboard/lib/roboto/files/roboto-latin-ext-400-normal.woff2"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"13740"},{"Name":"Content-Type","Value":"font/woff2"},{"Name":"ETag","Value":"\u0022/dlTwogVmh8UmRFyDYoZ\u002BtF9yA8aBgmUjPoUWMNoiZ0=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-latin-ext-400-normal.suekh9g4y6.woff">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-latin-ext-400-normal.woff'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"suekh9g4y6"},{"Name":"integrity","Value":"sha256-NP1VRFb4ClpjhPhVMErmMYj/gZ/W2bzOQmZoulEdbqI="},{"Name":"label","Value":"_content/DP.BlazorDashboard/lib/roboto/files/roboto-latin-ext-400-normal.woff"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"12472"},{"Name":"Content-Type","Value":"application/font-woff"},{"Name":"ETag","Value":"\u0022NP1VRFb4ClpjhPhVMErmMYj/gZ/W2bzOQmZoulEdbqI=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-latin-ext-400-normal.woff">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-latin-ext-400-normal.woff'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-NP1VRFb4ClpjhPhVMErmMYj/gZ/W2bzOQmZoulEdbqI="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"12472"},{"Name":"Content-Type","Value":"application/font-woff"},{"Name":"ETag","Value":"\u0022NP1VRFb4ClpjhPhVMErmMYj/gZ/W2bzOQmZoulEdbqI=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-latin-ext-400-normal.woff2">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-latin-ext-400-normal.woff2'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-/dlTwogVmh8UmRFyDYoZ\u002BtF9yA8aBgmUjPoUWMNoiZ0="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"13740"},{"Name":"Content-Type","Value":"font/woff2"},{"Name":"ETag","Value":"\u0022/dlTwogVmh8UmRFyDYoZ\u002BtF9yA8aBgmUjPoUWMNoiZ0=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-latin-ext-500-normal.584dtge5ma.woff">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-latin-ext-500-normal.woff'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"584dtge5ma"},{"Name":"integrity","Value":"sha256-WwxNdEIgxbW\u002BlzBxGS2J3u\u002B8R9l7iDoSR/RgAWVwsis="},{"Name":"label","Value":"_content/DP.BlazorDashboard/lib/roboto/files/roboto-latin-ext-500-normal.woff"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"12524"},{"Name":"Content-Type","Value":"application/font-woff"},{"Name":"ETag","Value":"\u0022WwxNdEIgxbW\u002BlzBxGS2J3u\u002B8R9l7iDoSR/RgAWVwsis=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-latin-ext-500-normal.ry34v6u61a.woff2">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-latin-ext-500-normal.woff2'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ry34v6u61a"},{"Name":"integrity","Value":"sha256-7VvwLWSNqE2NaOXnqSYcGY9HE5afkrVymoH7A5qTvhU="},{"Name":"label","Value":"_content/DP.BlazorDashboard/lib/roboto/files/roboto-latin-ext-500-normal.woff2"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"13976"},{"Name":"Content-Type","Value":"font/woff2"},{"Name":"ETag","Value":"\u00227VvwLWSNqE2NaOXnqSYcGY9HE5afkrVymoH7A5qTvhU=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-latin-ext-500-normal.woff">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-latin-ext-500-normal.woff'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-WwxNdEIgxbW\u002BlzBxGS2J3u\u002B8R9l7iDoSR/RgAWVwsis="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"12524"},{"Name":"Content-Type","Value":"application/font-woff"},{"Name":"ETag","Value":"\u0022WwxNdEIgxbW\u002BlzBxGS2J3u\u002B8R9l7iDoSR/RgAWVwsis=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-latin-ext-500-normal.woff2">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-latin-ext-500-normal.woff2'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-7VvwLWSNqE2NaOXnqSYcGY9HE5afkrVymoH7A5qTvhU="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"13976"},{"Name":"Content-Type","Value":"font/woff2"},{"Name":"ETag","Value":"\u00227VvwLWSNqE2NaOXnqSYcGY9HE5afkrVymoH7A5qTvhU=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-latin-ext-700-normal.hsmpm38mg2.woff2">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-latin-ext-700-normal.woff2'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"hsmpm38mg2"},{"Name":"integrity","Value":"sha256-X/6f\u002B0tB\u002B7vkiQKDgYd5pItL2qrxPjnb/zuK8xsdwO4="},{"Name":"label","Value":"_content/DP.BlazorDashboard/lib/roboto/files/roboto-latin-ext-700-normal.woff2"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"13964"},{"Name":"Content-Type","Value":"font/woff2"},{"Name":"ETag","Value":"\u0022X/6f\u002B0tB\u002B7vkiQKDgYd5pItL2qrxPjnb/zuK8xsdwO4=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-latin-ext-700-normal.u2on3edu6k.woff">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-latin-ext-700-normal.woff'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"u2on3edu6k"},{"Name":"integrity","Value":"sha256-pgS4FGMJrL92aTtVhEf6Y9syfnddBHAcdCvYbx2HnNE="},{"Name":"label","Value":"_content/DP.BlazorDashboard/lib/roboto/files/roboto-latin-ext-700-normal.woff"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"12480"},{"Name":"Content-Type","Value":"application/font-woff"},{"Name":"ETag","Value":"\u0022pgS4FGMJrL92aTtVhEf6Y9syfnddBHAcdCvYbx2HnNE=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-latin-ext-700-normal.woff">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-latin-ext-700-normal.woff'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-pgS4FGMJrL92aTtVhEf6Y9syfnddBHAcdCvYbx2HnNE="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"12480"},{"Name":"Content-Type","Value":"application/font-woff"},{"Name":"ETag","Value":"\u0022pgS4FGMJrL92aTtVhEf6Y9syfnddBHAcdCvYbx2HnNE=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-latin-ext-700-normal.woff2">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-latin-ext-700-normal.woff2'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-X/6f\u002B0tB\u002B7vkiQKDgYd5pItL2qrxPjnb/zuK8xsdwO4="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"13964"},{"Name":"Content-Type","Value":"font/woff2"},{"Name":"ETag","Value":"\u0022X/6f\u002B0tB\u002B7vkiQKDgYd5pItL2qrxPjnb/zuK8xsdwO4=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-vietnamese-300-normal.9t5m0j17qk.woff">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-vietnamese-300-normal.woff'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"9t5m0j17qk"},{"Name":"integrity","Value":"sha256-Ez2Zki5g3La8BLiOyVsCY3aQSyF2mOOSZDNz/BbyYh0="},{"Name":"label","Value":"_content/DP.BlazorDashboard/lib/roboto/files/roboto-vietnamese-300-normal.woff"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"5476"},{"Name":"Content-Type","Value":"application/font-woff"},{"Name":"ETag","Value":"\u0022Ez2Zki5g3La8BLiOyVsCY3aQSyF2mOOSZDNz/BbyYh0=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-vietnamese-300-normal.lu083vz7hu.woff2">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-vietnamese-300-normal.woff2'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"lu083vz7hu"},{"Name":"integrity","Value":"sha256-s5o3YfQflHbf2CdEZIfLebPbtVPSnr5QOV5CIzHg160="},{"Name":"label","Value":"_content/DP.BlazorDashboard/lib/roboto/files/roboto-vietnamese-300-normal.woff2"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"7840"},{"Name":"Content-Type","Value":"font/woff2"},{"Name":"ETag","Value":"\u0022s5o3YfQflHbf2CdEZIfLebPbtVPSnr5QOV5CIzHg160=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-vietnamese-300-normal.woff">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-vietnamese-300-normal.woff'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Ez2Zki5g3La8BLiOyVsCY3aQSyF2mOOSZDNz/BbyYh0="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"5476"},{"Name":"Content-Type","Value":"application/font-woff"},{"Name":"ETag","Value":"\u0022Ez2Zki5g3La8BLiOyVsCY3aQSyF2mOOSZDNz/BbyYh0=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-vietnamese-300-normal.woff2">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-vietnamese-300-normal.woff2'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-s5o3YfQflHbf2CdEZIfLebPbtVPSnr5QOV5CIzHg160="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"7840"},{"Name":"Content-Type","Value":"font/woff2"},{"Name":"ETag","Value":"\u0022s5o3YfQflHbf2CdEZIfLebPbtVPSnr5QOV5CIzHg160=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-vietnamese-400-normal.mawhif8q61.woff2">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-vietnamese-400-normal.woff2'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"mawhif8q61"},{"Name":"integrity","Value":"sha256-vqv\u002BqMfvdpNCfDf5ns4HH0w6rxS1kLEsRcPqYljYlqg="},{"Name":"label","Value":"_content/DP.BlazorDashboard/lib/roboto/files/roboto-vietnamese-400-normal.woff2"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"7856"},{"Name":"Content-Type","Value":"font/woff2"},{"Name":"ETag","Value":"\u0022vqv\u002BqMfvdpNCfDf5ns4HH0w6rxS1kLEsRcPqYljYlqg=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-vietnamese-400-normal.v4ewz6s5nv.woff">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-vietnamese-400-normal.woff'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"v4ewz6s5nv"},{"Name":"integrity","Value":"sha256-cRWoEHAKra/ZChYikjfkrLq80hcwGmaWriPBvA72ibs="},{"Name":"label","Value":"_content/DP.BlazorDashboard/lib/roboto/files/roboto-vietnamese-400-normal.woff"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"5436"},{"Name":"Content-Type","Value":"application/font-woff"},{"Name":"ETag","Value":"\u0022cRWoEHAKra/ZChYikjfkrLq80hcwGmaWriPBvA72ibs=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-vietnamese-400-normal.woff">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-vietnamese-400-normal.woff'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-cRWoEHAKra/ZChYikjfkrLq80hcwGmaWriPBvA72ibs="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"5436"},{"Name":"Content-Type","Value":"application/font-woff"},{"Name":"ETag","Value":"\u0022cRWoEHAKra/ZChYikjfkrLq80hcwGmaWriPBvA72ibs=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-vietnamese-400-normal.woff2">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-vietnamese-400-normal.woff2'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-vqv\u002BqMfvdpNCfDf5ns4HH0w6rxS1kLEsRcPqYljYlqg="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"7856"},{"Name":"Content-Type","Value":"font/woff2"},{"Name":"ETag","Value":"\u0022vqv\u002BqMfvdpNCfDf5ns4HH0w6rxS1kLEsRcPqYljYlqg=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-vietnamese-500-normal.3f19egk1j2.woff">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-vietnamese-500-normal.woff'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"3f19egk1j2"},{"Name":"integrity","Value":"sha256-kQKiDahlqguKD8Oq0ymyqWALDangk39badGNBclHJuc="},{"Name":"label","Value":"_content/DP.BlazorDashboard/lib/roboto/files/roboto-vietnamese-500-normal.woff"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"5480"},{"Name":"Content-Type","Value":"application/font-woff"},{"Name":"ETag","Value":"\u0022kQKiDahlqguKD8Oq0ymyqWALDangk39badGNBclHJuc=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-vietnamese-500-normal.htpspvgzpa.woff2">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-vietnamese-500-normal.woff2'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"htpspvgzpa"},{"Name":"integrity","Value":"sha256-tcbjTUcacjJsMVH2\u002BJtws\u002BQyJ0f3Z9QPzUllYH68ymg="},{"Name":"label","Value":"_content/DP.BlazorDashboard/lib/roboto/files/roboto-vietnamese-500-normal.woff2"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"7840"},{"Name":"Content-Type","Value":"font/woff2"},{"Name":"ETag","Value":"\u0022tcbjTUcacjJsMVH2\u002BJtws\u002BQyJ0f3Z9QPzUllYH68ymg=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-vietnamese-500-normal.woff">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-vietnamese-500-normal.woff'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-kQKiDahlqguKD8Oq0ymyqWALDangk39badGNBclHJuc="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"5480"},{"Name":"Content-Type","Value":"application/font-woff"},{"Name":"ETag","Value":"\u0022kQKiDahlqguKD8Oq0ymyqWALDangk39badGNBclHJuc=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-vietnamese-500-normal.woff2">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-vietnamese-500-normal.woff2'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-tcbjTUcacjJsMVH2\u002BJtws\u002BQyJ0f3Z9QPzUllYH68ymg="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"7840"},{"Name":"Content-Type","Value":"font/woff2"},{"Name":"ETag","Value":"\u0022tcbjTUcacjJsMVH2\u002BJtws\u002BQyJ0f3Z9QPzUllYH68ymg=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-vietnamese-700-normal.sxmhvswv3z.woff">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-vietnamese-700-normal.woff'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"sxmhvswv3z"},{"Name":"integrity","Value":"sha256-oEJUpf1qAnbD00LBfgACV\u002BNuHnVtkkR0A68JBFiu5pQ="},{"Name":"label","Value":"_content/DP.BlazorDashboard/lib/roboto/files/roboto-vietnamese-700-normal.woff"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"5444"},{"Name":"Content-Type","Value":"application/font-woff"},{"Name":"ETag","Value":"\u0022oEJUpf1qAnbD00LBfgACV\u002BNuHnVtkkR0A68JBFiu5pQ=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-vietnamese-700-normal.ucyj39v6m4.woff2">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-vietnamese-700-normal.woff2'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ucyj39v6m4"},{"Name":"integrity","Value":"sha256-UrRmgRc8jZzTfXLR5eSWHZ4jsYDZWCWoXDIDUzX4NDE="},{"Name":"label","Value":"_content/DP.BlazorDashboard/lib/roboto/files/roboto-vietnamese-700-normal.woff2"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"7880"},{"Name":"Content-Type","Value":"font/woff2"},{"Name":"ETag","Value":"\u0022UrRmgRc8jZzTfXLR5eSWHZ4jsYDZWCWoXDIDUzX4NDE=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-vietnamese-700-normal.woff">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-vietnamese-700-normal.woff'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-oEJUpf1qAnbD00LBfgACV\u002BNuHnVtkkR0A68JBFiu5pQ="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"5444"},{"Name":"Content-Type","Value":"application/font-woff"},{"Name":"ETag","Value":"\u0022oEJUpf1qAnbD00LBfgACV\u002BNuHnVtkkR0A68JBFiu5pQ=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/files/roboto-vietnamese-700-normal.woff2">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-vietnamese-700-normal.woff2'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-UrRmgRc8jZzTfXLR5eSWHZ4jsYDZWCWoXDIDUzX4NDE="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"7880"},{"Name":"Content-Type","Value":"font/woff2"},{"Name":"ETag","Value":"\u0022UrRmgRc8jZzTfXLR5eSWHZ4jsYDZWCWoXDIDUzX4NDE=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/LICENSE">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\LICENSE'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-HvvcnLLZiqqERXS1Ej\u002BNUjNTLCFLolnhU24dVwLQWKE="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"4407"},{"Name":"Content-Type","Value":"application/octet-stream"},{"Name":"ETag","Value":"\u0022HvvcnLLZiqqERXS1Ej\u002BNUjNTLCFLolnhU24dVwLQWKE=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/DP.BlazorDashboard/lib/roboto/LICENSE.ulxvt36fd6">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\LICENSE'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ulxvt36fd6"},{"Name":"integrity","Value":"sha256-HvvcnLLZiqqERXS1Ej\u002BNUjNTLCFLolnhU24dVwLQWKE="},{"Name":"label","Value":"_content/DP.BlazorDashboard/lib/roboto/LICENSE"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"4407"},{"Name":"Content-Type","Value":"application/octet-stream"},{"Name":"ETag","Value":"\u0022HvvcnLLZiqqERXS1Ej\u002BNUjNTLCFLolnhU24dVwLQWKE=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 Jan 2026 18:06:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+  </ItemGroup>
+</Project>

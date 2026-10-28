@@ -1,24 +1,60 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+<Project Sdk="Microsoft.NET.Sdk.Razor">
 
   <PropertyGroup>
-    <TargetFramework>net9.0</TargetFramework>
+    <!-- Multi-targeting for .NET 8, .NET 9, .NET 10, and .NET 11 -->
+    <TargetFrameworks>net8.0;net9.0;net10.0;net11.0</TargetFrameworks>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-	<PackageId>DP.BlazorDashboard</PackageId>
-	<Version>1.0.0</Version>
-	<Authors>Don Potts</Authors>
-	<Description>Reusable dashboard component for MudBlazor applications</Description>
-	<BaseOutputPath>C:\LocalFeed</BaseOutputPath>
-  </PropertyGroup>
+    <LangVersion>latest</LangVersion>
 
+    <!-- Package Identity -->
+    <PackageId>DP.BlazorDashboard</PackageId>
+    <Version>2.1.0</Version>
+    <Authors>Don Potts</Authors>
+    <Company>Don Potts</Company>
+    <Copyright>Copyright (c) Don Potts 2024</Copyright>
+
+    <!-- Package Description -->
+    <Title>DP.BlazorDashboard</Title>
+    <Description>A batteries-included dashboard component library for MudBlazor applications featuring drag-and-drop grid layout with GridStack, built-in Chart.js charting, localStorage persistence, and dark/light theme support.</Description>
+    <PackageTags>blazor;mudblazor;dashboard;gridstack;charts;chartjs;components;razor;webassembly</PackageTags>
+
+    <!-- Package URLs -->
+    <PackageProjectUrl>https://github.com/DonPotts/DP.BlazorDashboard</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/DonPotts/DP.BlazorDashboard</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+
+    <!-- License -->
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+
+    <!-- README in NuGet -->
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+
+    <!-- Generate documentation -->
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+
+    <!-- Include symbols for debugging -->
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+
+    <!-- Local output for development and NuGet package feed -->
+    <BaseOutputPath>C:\LocalFeed</BaseOutputPath>
+    <PackageOutputPath>C:\LocalFeed</PackageOutputPath>
+  </PropertyGroup>
 
   <ItemGroup>
     <SupportedPlatform Include="browser" />
   </ItemGroup>
 
+  <!-- Flexible version constraints -->
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="[9.0.1,10.0.0)" />
-	<PackageReference Include="MudBlazor" Version="[8.0.0,9.0.0)" />
+    <!-- Support MudBlazor 8.x+ which uses IMudDialogInstance interface -->
+    <PackageReference Include="MudBlazor" Version="9.0.0" />
+  </ItemGroup>
+
+  <!-- Include README in package -->
+  <ItemGroup>
+    <None Include="..\README.md" Pack="true" PackagePath="\" />
   </ItemGroup>
 
 </Project>

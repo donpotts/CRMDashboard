@@ -1,0 +1,147 @@
+﻿@page "/"
+
+<PageTitle>Sample Dashboard</PageTitle>
+
+<MudText Typo="Typo.h4" Class="mb-4">Sample Dashboard</MudText>
+
+<Dashboard StorageKey="sample-dashboard"
+           InitialLayoutFactory="GetInitialLayout"
+           Options="@_options" />
+
+@code {
+    private DashboardOptions _options = new()
+    {
+        ShowAddButton = true,
+        ShowResetButton = true,
+        AllowDelete = true,
+        AllowMove = true,
+        AllowResize = true,
+        AutoRenderCharts = true,
+        Grid = new GridOptions
+        {
+            CellHeight = 70,
+            Margin = 10,
+            Column = 12
+        }
+    };
+
+    private List<DashboardCard> GetInitialLayout() => new()
+    {
+        // Line Chart
+        new DashboardCard
+        {
+            Id = "sales-chart",
+            Title = "Monthly Sales",
+            X = 0, Y = 0, W = 6, H = 4,
+            ChartConfig = new ChartConfig
+            {
+                Type = "line",
+                Labels = new List<string> { "Jan", "Feb", "Mar", "Apr", "May", "Jun" },
+                Datasets = new List<ChartDataset>
+                {
+                    new ChartDataset
+                    {
+                        Label = "Sales ($k)",
+                        Data = new List<double> { 12, 19, 15, 25, 22, 30 },
+                        BorderColor = "#1976d2",
+                        BackgroundColor = "rgba(25, 118, 210, 0.1)",
+                        Tension = 0.4,
+                        Fill = true
+                    }
+                }
+            }
+        },
+        // Doughnut Chart
+        new DashboardCard
+        {
+            Id = "category-chart",
+            Title = "Sales by Category",
+            X = 6, Y = 0, W = 6, H = 4,
+            ChartConfig = new ChartConfig
+            {
+                Type = "doughnut",
+                Labels = new List<string> { "Electronics", "Clothing", "Food", "Books" },
+                Datasets = new List<ChartDataset>
+                {
+                    new ChartDataset
+                    {
+                        Label = "Categories",
+                        Data = new List<double> { 300, 200, 150, 100 },
+                        BackgroundColors = new List<string> { "#1976d2", "#388e3c", "#f57c00", "#7b1fa2" }
+                    }
+                }
+            }
+        },
+        // Bar Chart
+        new DashboardCard
+        {
+            Id = "revenue-chart",
+            Title = "Quarterly Revenue",
+            X = 0, Y = 4, W = 4, H = 4,
+            ChartConfig = new ChartConfig
+            {
+                Type = "bar",
+                Labels = new List<string> { "Q1", "Q2", "Q3", "Q4" },
+                Datasets = new List<ChartDataset>
+                {
+                    new ChartDataset
+                    {
+                        Label = "Revenue ($k)",
+                        Data = new List<double> { 65, 78, 90, 85 },
+                        BackgroundColor = "rgba(56, 142, 60, 0.8)"
+                    }
+                }
+            }
+        },
+        // Radar Chart
+        new DashboardCard
+        {
+            Id = "performance-chart",
+            Title = "Team Performance",
+            X = 4, Y = 4, W = 4, H = 4,
+            ChartConfig = new ChartConfig
+            {
+                Type = "radar",
+                Labels = new List<string> { "Speed", "Quality", "Communication", "Teamwork", "Innovation" },
+                Datasets = new List<ChartDataset>
+                {
+                    new ChartDataset
+                    {
+                        Label = "Team A",
+                        Data = new List<double> { 85, 90, 78, 88, 92 },
+                        BackgroundColor = "rgba(25, 118, 210, 0.2)",
+                        BorderColor = "#1976d2"
+                    },
+                    new ChartDataset
+                    {
+                        Label = "Team B",
+                        Data = new List<double> { 78, 85, 92, 80, 88 },
+                        BackgroundColor = "rgba(245, 124, 0, 0.2)",
+                        BorderColor = "#f57c00"
+                    }
+                }
+            }
+        },
+        // Polar Area Chart
+        new DashboardCard
+        {
+            Id = "region-chart",
+            Title = "Sales by Region",
+            X = 8, Y = 4, W = 4, H = 4,
+            ChartConfig = new ChartConfig
+            {
+                Type = "polarArea",
+                Labels = new List<string> { "North", "South", "East", "West" },
+                Datasets = new List<ChartDataset>
+                {
+                    new ChartDataset
+                    {
+                        Label = "Regions",
+                        Data = new List<double> { 120, 90, 80, 110 },
+                        BackgroundColors = new List<string> { "#e91e63", "#9c27b0", "#00bcd4", "#8bc34a" }
+                    }
+                }
+            }
+        }
+    };
+}

@@ -1,31 +1,99 @@
-﻿@page "/"
+@page "/"
 @page "/crmdashboard"
 @inject ISnackbar Snackbar
 @inject IDialogService DialogService
 @inject HttpClient HttpClient
-@inject IJSRuntime JSRuntime
 @using DP.BlazorDashboard.Models
-
+@using DP.BlazorDashboard.Components
 
 <PageTitle>CRM Dashboard</PageTitle>
 
-<MudText Typo="Typo.h3">Welcome to the CRM Dashboard</MudText>
+<MudText Typo="Typo.h3" Class="mb-4">Welcome to the CRM Dashboard</MudText>
 
-<Dashboard StorageKey="blazor-dashboard-final"
+@* Dashboard component with full parameter configuration *@
+<Dashboard StorageKey="crm-dashboard-v2"
            InitialLayoutFactory="GetInitialLayout"
-           CardRenderer="RenderCardContent"
-           OnLayoutChanged="HandleChartsRerender" />
+           CardRenderer="RenderNonChartCards"
+           Options="@_dashboardOptions"
+           AddCardText="Add Widget"
+           ResetLayoutText="Reset Dashboard"
+           NewCardFactory="CreateNewCard"
+           OnLayoutChanged="HandleLayoutChanged"
+           OnCardAdded="HandleCardAdded"
+           OnCardDeleted="HandleCardDeleted"
+           OnLayoutSaved="HandleLayoutSaved" />
 
 @code {
-    private IJSObjectReference? _chartModule;
+    // Dashboard options can override global settings from Program.cs
+    private DashboardOptions _dashboardOptions = new()
+    {
+        ShowAddButton = true,
+        ShowResetButton = true,
+        AllowDelete = true,
+        AllowMove = true,
+        AllowResize = true,
+        PersistLayout = true,
+        AutoRenderCharts = true,
+        ChartRenderDelayMs = 150,
+        Grid = new GridOptions
+        {
+            CellHeight = 70,
+            Margin = 10,
+            Column = 12,
+            Float = true,
+            Animate = true,
+            DefaultCardWidth = 4,
+            DefaultCardHeight = 4
+        }
+    };
+
+    // Factory for creating new cards when "Add Widget" is clicked
+    private DashboardCard CreateNewCard() => new()
+    {
+        Id = $"card-{Guid.NewGuid():N}",
+        Title = "New Widget",
+        CardType = "custom",
+        X = 0,
+        Y = 0,
+        W = _dashboardOptions.Grid.DefaultCardWidth,
+        H = _dashboardOptions.Grid.DefaultCardHeight,
+        MinW = 2,
+        MinH = 2,
+        Data = new { CreatedAt = DateTime.Now }
+    };
+
+    // Event handlers for dashboard interactions
+    private async Task HandleLayoutChanged()
+    {
+        // Layout changed - could trigger analytics or sync
+        await Task.CompletedTask;
+    }
+
+    private async Task HandleCardAdded(DashboardCard card)
+    {
+        Snackbar.Add($"Widget '{card.Title}' added", Severity.Success);
+        await Task.CompletedTask;
+    }
+
+    private async Task HandleCardDeleted(DashboardCard card)
+    {
+        Snackbar.Add($"Widget '{card.Title}' removed", Severity.Info);
+        await Task.CompletedTask;
+    }
+
+    private async Task HandleLayoutSaved(List<DashboardCard> layout)
+    {
+        // Layout saved to localStorage - could sync to server here
+        await Task.CompletedTask;
+    }
 
     private List<DashboardCard> GetInitialLayout() => new()
     {
-        // Top Row - Key Performance Indicators
+        // Top Row - Charts (rendered automatically by library)
         new DashboardCard
         {
             Id = "sales-chart",
-            CardType = "sales-chart",
+            CardType = "chart",
             Title = "Sales Over Time",
             X = 0, Y = 0, W = 6, H = 4,
             ChartConfig = new ChartConfig
@@ -58,7 +126,7 @@
         new DashboardCard
         {
             Id = "lead-chart",
-            CardType = "lead-chart",
+            CardType = "chart",
             Title = "Lead Sources",
             X = 6, Y = 0, W = 6, H = 4,
             ChartConfig = new ChartConfig
@@ -81,7 +149,7 @@
         new DashboardCard
         {
             Id = "revenue-chart",
-            CardType = "revenue-chart",
+            CardType = "chart",
             Title = "Monthly Revenue",
             X = 0, Y = 4, W = 4, H = 4,
             ChartConfig = new ChartConfig
@@ -103,7 +171,7 @@
         new DashboardCard
         {
             Id = "pipeline-chart",
-            CardType = "pipeline-chart",
+            CardType = "chart",
             Title = "Sales Pipeline by Stage",
             X = 4, Y = 4, W = 4, H = 4,
             ChartConfig = new ChartConfig
@@ -125,7 +193,7 @@
         new DashboardCard
         {
             Id = "win-rate-chart",
-            CardType = "win-rate-chart",
+            CardType = "chart",
             Title = "Win Rate Trends",
             X = 8, Y = 4, W = 4, H = 4,
             ChartConfig = new ChartConfig
@@ -151,7 +219,7 @@
         new DashboardCard
         {
             Id = "customer-acquisition-chart",
-            CardType = "customer-acquisition-chart",
+            CardType = "chart",
             Title = "Customer Acquisition Cost vs LTV",
             X = 0, Y = 8, W = 6, H = 4,
             ChartConfig = new ChartConfig
@@ -173,7 +241,7 @@
         new DashboardCard
         {
             Id = "sales-team-chart",
-            CardType = "sales-team-chart",
+            CardType = "chart",
             Title = "Sales Team Performance",
             X = 6, Y = 8, W = 6, H = 4,
             ChartConfig = new ChartConfig
@@ -204,7 +272,7 @@
         new DashboardCard
         {
             Id = "geographic-chart",
-            CardType = "geographic-chart",
+            CardType = "chart",
             Title = "Revenue by Region",
             X = 0, Y = 12, W = 6, H = 4,
             ChartConfig = new ChartConfig
@@ -225,7 +293,7 @@
         new DashboardCard
         {
             Id = "forecast-chart",
-            CardType = "forecast-chart",
+            CardType = "chart",
             Title = "Sales Forecast vs Actual",
             X = 6, Y = 12, W = 6, H = 4,
             ChartConfig = new ChartConfig
@@ -260,7 +328,7 @@
         new DashboardCard
         {
             Id = "customer-lifecycle-chart",
-            CardType = "customer-lifecycle-chart",
+            CardType = "chart",
             Title = "Customer Lifecycle Value",
             X = 0, Y = 16, W = 6, H = 4,
             ChartConfig = new ChartConfig
@@ -281,7 +349,7 @@
         new DashboardCard
         {
             Id = "churn-analysis-chart",
-            CardType = "churn-analysis-chart",
+            CardType = "chart",
             Title = "Churn Rate by Customer Segment",
             X = 6, Y = 16, W = 6, H = 4,
             ChartConfig = new ChartConfig
@@ -300,7 +368,7 @@
             }
         },
 
-        // Sixth Row - KPIs and Activity Feed
+        // Sixth Row - KPIs (non-chart cards)
         new DashboardCard { Id = "kpi-leads", CardType = "leads", Title = "New Leads", X = 0, Y = 20, W = 2, H = 4 },
         new DashboardCard { Id = "kpi-revenue", CardType = "revenue", Title = "Total Revenue", X = 2, Y = 20, W = 2, H = 4 },
         new DashboardCard { Id = "kpi-conversion", CardType = "conversion", Title = "Conversion Rate", X = 4, Y = 20, W = 2, H = 4 },
@@ -318,23 +386,18 @@
         new DashboardCard { Id = "pending-tasks", CardType = "tasks", Title = "Pending Tasks", X = 8, Y = 28, W = 4, H = 5 },
     };
 
-    private RenderFragment<DashboardCard> RenderCardContent => card => __builder =>
+    // Only render non-chart cards - charts with ChartConfig are rendered automatically by the library
+    private RenderFragment<DashboardCard> RenderNonChartCards => card => __builder =>
     {
+        // Charts are handled automatically by the Dashboard component when ChartConfig is set
+        if (card.ChartConfig != null)
+        {
+            // Let the library's ChartCard component handle this
+            return;
+        }
+
         switch (card.CardType)
         {
-            case "sales-chart":
-            case "lead-chart":
-            case "revenue-chart":
-            case "pipeline-chart":
-            case "win-rate-chart":
-            case "customer-acquisition-chart":
-            case "sales-team-chart":
-            case "geographic-chart":
-            case "forecast-chart":
-            case "customer-lifecycle-chart":
-            case "churn-analysis-chart":
-                <canvas id="@(card.Id)Canvas" style="pointer-events: none;"></canvas>
-                break;
             case "leads":
                 <div class="kpi-card-body">
                     <div class="kpi-number">1,284</div>
@@ -520,81 +583,4 @@
                 break;
         }
     };
-
-    private async Task HandleChartsRerender()
-    {
-        // Console.WriteLine("CRMDashboard.razor: HandleChartsRerender called");
-
-        // Add a delay to ensure the canvas elements are in the DOM
-        await Task.Delay(100);
-
-        if (_chartModule == null)
-        {
-            _chartModule = await JSRuntime.InvokeAsync<IJSObjectReference>("import", "./_content/DP.BlazorDashboard/js/chart-renderer.js");
-        }
-
-        try
-        {
-            var layout = GetInitialLayout();
-
-            // Render each chart with its configuration
-            foreach (var card in layout.Where(c => c.ChartConfig != null))
-            {
-                var canvasId = $"{card.Id}Canvas";
-
-                // Check if canvas exists before trying to render
-                var canvasExists = await JSRuntime.InvokeAsync<bool>("eval", $"document.getElementById('{canvasId}') !== null");
-
-                if (canvasExists)
-                {
-                    await _chartModule.InvokeVoidAsync("renderChart", canvasId, card.ChartConfig);
-                    // Console.WriteLine($"Rendered chart for {card.Id}");
-                }
-                else
-                {
-                    // Console.WriteLine($"Canvas {canvasId} not found, will retry...");
-                    // Retry after a longer delay
-                    await Task.Delay(200);
-                    canvasExists = await JSRuntime.InvokeAsync<bool>("eval", $"document.getElementById('{canvasId}') !== null");
-                    if (canvasExists)
-                    {
-                        await _chartModule.InvokeVoidAsync("renderChart", canvasId, card.ChartConfig);
-                        // Console.WriteLine($"Rendered chart for {card.Id} on retry");
-                    }
-                }
-            }
-
-            // Console.WriteLine("CRMDashboard.razor: All charts rendered successfully.");
-        }
-        catch (Exception ex)
-        {
-            // Console.WriteLine($"Error rendering charts: {ex.Message}");
-        }
-    }
-
-    // Example method to update chart data dynamically
-    private async Task UpdateSalesChart()
-    {
-        if (_chartModule == null) return;
-
-        var updatedConfig = new ChartConfig
-        {
-            Type = "line",
-            Labels = new List<string> { "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep" },
-            Datasets = new List<ChartDataset>
-            {
-                new ChartDataset
-                {
-                    Label = "Updated Sales ($k)",
-                    Data = new List<double> { 15, 22, 11, 19, 25, 18, 31, 35, 29 },
-                    BorderColor = "#dc3545",
-                    BackgroundColor = "rgba(220, 53, 69, 0.1)",
-                    Tension = 0.3,
-                    Fill = true
-                }
-            }
-        };
-
-        await _chartModule.InvokeVoidAsync("renderChart", "sales-chartCanvas", updatedConfig);
-    }
 }

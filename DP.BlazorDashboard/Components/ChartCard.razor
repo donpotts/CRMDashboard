@@ -1,0 +1,29 @@
+@inject ChartService ChartService
+
+<canvas id="@CanvasId" style="pointer-events: none;"></canvas>
+
+@code {
+    /// <summary>
+    /// The ID of the card this chart belongs to.
+    /// </summary>
+    [Parameter, EditorRequired]
+    public string CardId { get; set; } = default!;
+
+    /// <summary>
+    /// The chart configuration.
+    /// </summary>
+    [Parameter, EditorRequired]
+    public ChartConfig Config { get; set; } = default!;
+
+    private string CanvasId => $"{CardId}Canvas";
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            // Small delay to ensure canvas is in DOM
+            await Task.Delay(50);
+            await ChartService.RenderChartAsync(CanvasId, Config);
+        }
+    }
+}

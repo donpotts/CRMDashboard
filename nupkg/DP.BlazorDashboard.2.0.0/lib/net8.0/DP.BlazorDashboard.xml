@@ -1,0 +1,538 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DP.BlazorDashboard</name>
+    </assembly>
+    <members>
+        <member name="T:DP.BlazorDashboard.ServiceCollectionExtensions">
+            <summary>
+            Extension methods for configuring DP.BlazorDashboard services.
+            </summary>
+        </member>
+        <member name="M:DP.BlazorDashboard.ServiceCollectionExtensions.AddBlazorDashboard(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Adds DP.BlazorDashboard services to the service collection with default options.
+            </summary>
+            <param name="services">The service collection.</param>
+            <returns>The service collection for chaining.</returns>
+        </member>
+        <member name="M:DP.BlazorDashboard.ServiceCollectionExtensions.AddBlazorDashboard(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{DP.BlazorDashboard.Models.DashboardOptions})">
+            <summary>
+            Adds DP.BlazorDashboard services to the service collection with configuration.
+            </summary>
+            <param name="services">The service collection.</param>
+            <param name="configure">Action to configure dashboard options.</param>
+            <returns>The service collection for chaining.</returns>
+        </member>
+        <member name="M:DP.BlazorDashboard.ServiceCollectionExtensions.AddBlazorDashboard``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Adds DP.BlazorDashboard services with a custom theme service implementation.
+            </summary>
+            <typeparam name="TThemeService">Custom theme service type implementing IThemeService.</typeparam>
+            <param name="services">The service collection.</param>
+            <returns>The service collection for chaining.</returns>
+        </member>
+        <member name="M:DP.BlazorDashboard.ServiceCollectionExtensions.AddBlazorDashboard``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{DP.BlazorDashboard.Models.DashboardOptions})">
+            <summary>
+            Adds DP.BlazorDashboard services with a custom theme service implementation and configuration.
+            </summary>
+            <typeparam name="TThemeService">Custom theme service type implementing IThemeService.</typeparam>
+            <param name="services">The service collection.</param>
+            <param name="configure">Action to configure dashboard options.</param>
+            <returns>The service collection for chaining.</returns>
+        </member>
+        <member name="M:DP.BlazorDashboard.ServiceCollectionExtensions.AddBlazorDashboardWithCustomStorage``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Adds DP.BlazorDashboard services with a custom storage implementation.
+            </summary>
+            <typeparam name="TStorageService">Custom storage service type implementing IDashboardStorageService.</typeparam>
+            <param name="services">The service collection.</param>
+            <returns>The service collection for chaining.</returns>
+        </member>
+        <member name="M:DP.BlazorDashboard.ServiceCollectionExtensions.AddBlazorDashboardWithCustomStorage``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{DP.BlazorDashboard.Models.DashboardOptions})">
+            <summary>
+            Adds DP.BlazorDashboard services with a custom storage implementation and configuration.
+            </summary>
+            <typeparam name="TStorageService">Custom storage service type implementing IDashboardStorageService.</typeparam>
+            <param name="services">The service collection.</param>
+            <param name="configure">Action to configure dashboard options.</param>
+            <returns>The service collection for chaining.</returns>
+        </member>
+        <member name="T:DP.BlazorDashboard.Models.DashboardCard">
+            <summary>
+            Represents a card in the dashboard grid.
+            </summary>
+        </member>
+        <member name="P:DP.BlazorDashboard.Models.DashboardCard.Id">
+            <summary>
+            Unique identifier for the card.
+            </summary>
+        </member>
+        <member name="P:DP.BlazorDashboard.Models.DashboardCard.Title">
+            <summary>
+            Display title for the card header.
+            </summary>
+        </member>
+        <member name="P:DP.BlazorDashboard.Models.DashboardCard.CardType">
+            <summary>
+            Card type identifier used for custom rendering.
+            </summary>
+        </member>
+        <member name="P:DP.BlazorDashboard.Models.DashboardCard.X">
+            <summary>
+            X position in the grid (0-based).
+            </summary>
+        </member>
+        <member name="P:DP.BlazorDashboard.Models.DashboardCard.Y">
+            <summary>
+            Y position in the grid (0-based).
+            </summary>
+        </member>
+        <member name="P:DP.BlazorDashboard.Models.DashboardCard.W">
+            <summary>
+            Width in grid units.
+            </summary>
+        </member>
+        <member name="P:DP.BlazorDashboard.Models.DashboardCard.H">
+            <summary>
+            Height in grid units.
+            </summary>
+        </member>
+        <member name="P:DP.BlazorDashboard.Models.DashboardCard.MinW">
+            <summary>
+            Minimum width in grid units.
+            </summary>
+        </member>
+        <member name="P:DP.BlazorDashboard.Models.DashboardCard.MaxW">
+            <summary>
+            Maximum width in grid units.
+            </summary>
+        </member>
+        <member name="P:DP.BlazorDashboard.Models.DashboardCard.MinH">
+            <summary>
+            Minimum height in grid units.
+            </summary>
+        </member>
+        <member name="P:DP.BlazorDashboard.Models.DashboardCard.MaxH">
+            <summary>
+            Maximum height in grid units.
+            </summary>
+        </member>
+        <member name="P:DP.BlazorDashboard.Models.DashboardCard.Locked">
+            <summary>
+            Whether this card is locked (cannot move/resize).
+            </summary>
+        </member>
+        <member name="P:DP.BlazorDashboard.Models.DashboardCard.ChartConfig">
+            <summary>
+            Chart configuration for cards that display charts.
+            When set, the library will automatically render the chart.
+            </summary>
+        </member>
+        <member name="P:DP.BlazorDashboard.Models.DashboardCard.Data">
+            <summary>
+            Custom data that can be attached to the card.
+            Useful for passing data to custom card renderers.
+            </summary>
+        </member>
+        <member name="P:DP.BlazorDashboard.Models.DashboardCard.CssClass">
+            <summary>
+            CSS class to apply to the card.
+            </summary>
+        </member>
+        <member name="T:DP.BlazorDashboard.Models.ChartConfig">
+            <summary>
+            Configuration for Chart.js charts.
+            </summary>
+        </member>
+        <member name="P:DP.BlazorDashboard.Models.ChartConfig.Type">
+            <summary>
+            Chart type: line, bar, doughnut, pie, radar, polarArea, scatter.
+            </summary>
+        </member>
+        <member name="P:DP.BlazorDashboard.Models.ChartConfig.Labels">
+            <summary>
+            Labels for the chart axes.
+            </summary>
+        </member>
+        <member name="P:DP.BlazorDashboard.Models.ChartConfig.Datasets">
+            <summary>
+            Data series for the chart.
+            </summary>
+        </member>
+        <member name="P:DP.BlazorDashboard.Models.ChartConfig.Options">
+            <summary>
+            Chart options for customization.
+            </summary>
+        </member>
+        <member name="T:DP.BlazorDashboard.Models.ChartDataset">
+            <summary>
+            A dataset for Chart.js charts.
+            </summary>
+        </member>
+        <member name="P:DP.BlazorDashboard.Models.ChartDataset.Label">
+            <summary>
+            Label for this dataset.
+            </summary>
+        </member>
+        <member name="P:DP.BlazorDashboard.Models.ChartDataset.Data">
+            <summary>
+            Data points for this dataset.
+            </summary>
+        </member>
+        <member name="P:DP.BlazorDashboard.Models.ChartDataset.BorderColor">
+            <summary>
+            Border color for lines and bar outlines.
+            </summary>
+        </member>
+        <member name="P:DP.BlazorDashboard.Models.ChartDataset.BackgroundColor">
+            <summary>
+            Background color for fills and bars.
+            </summary>
+        </member>
+        <member name="P:DP.BlazorDashboard.Models.ChartDataset.BackgroundColors">
+            <summary>
+            For multi-color charts like doughnut, pie, polarArea.
+            </summary>
+        </member>
+        <member name="P:DP.BlazorDashboard.Models.ChartDataset.Tension">
+            <summary>
+            Line tension for line charts (0 = straight, 0.4 = curved).
+            </summary>
+        </member>
+        <member name="P:DP.BlazorDashboard.Models.ChartDataset.Fill">
+            <summary>
+            Whether to fill under the line for line charts.
+            </summary>
+        </member>
+        <member name="P:DP.BlazorDashboard.Models.ChartDataset.BorderWidth">
+            <summary>
+            Border width in pixels.
+            </summary>
+        </member>
+        <member name="T:DP.BlazorDashboard.Models.ChartOptions">
+            <summary>
+            Chart.js options configuration.
+            </summary>
+        </member>
+        <member name="P:DP.BlazorDashboard.Models.ChartOptions.Responsive">
+            <summary>
+            Whether the chart should be responsive.
+            </summary>
+        </member>
+        <member name="P:DP.BlazorDashboard.Models.ChartOptions.MaintainAspectRatio">
+            <summary>
+            Whether to maintain the aspect ratio.
+            </summary>
+        </member>
+        <member name="P:DP.BlazorDashboard.Models.ChartOptions.Legend">
+            <summary>
+            Legend configuration.
+            </summary>
+        </member>
+        <member name="P:DP.BlazorDashboard.Models.ChartOptions.Scales">
+            <summary>
+            Scales configuration for axes.
+            </summary>
+        </member>
+        <member name="T:DP.BlazorDashboard.Models.ChartLegend">
+            <summary>
+            Legend configuration for Chart.js.
+            </summary>
+        </member>
+        <member name="P:DP.BlazorDashboard.Models.ChartLegend.Position">
+            <summary>
+            Position of the legend: top, bottom, left, right.
+            </summary>
+        </member>
+        <member name="P:DP.BlazorDashboard.Models.ChartLegend.Display">
+            <summary>
+            Whether to display the legend.
+            </summary>
+        </member>
+        <member name="T:DP.BlazorDashboard.Models.DashboardOptions">
+            <summary>
+            Configuration options for the Dashboard component.
+            </summary>
+        </member>
+        <member name="P:DP.BlazorDashboard.Models.DashboardOptions.ShowAddButton">
+            <summary>
+            Whether to show the Add Card button. Default: true.
+            </summary>
+        </member>
+        <member name="P:DP.BlazorDashboard.Models.DashboardOptions.ShowResetButton">
+            <summary>
+            Whether to show the Reset Layout button. Default: true.
+            </summary>
+        </member>
+        <member name="P:DP.BlazorDashboard.Models.DashboardOptions.AllowDelete">
+            <summary>
+            Whether cards can be deleted. Default: true.
+            </summary>
+        </member>
+        <member name="P:DP.BlazorDashboard.Models.DashboardOptions.AllowMove">
+            <summary>
+            Whether cards can be moved. Default: true.
+            </summary>
+        </member>
+        <member name="P:DP.BlazorDashboard.Models.DashboardOptions.AllowResize">
+            <summary>
+            Whether cards can be resized. Default: true.
+            </summary>
+        </member>
+        <member name="P:DP.BlazorDashboard.Models.DashboardOptions.PersistLayout">
+            <summary>
+            Whether to persist layout to storage. Default: true.
+            </summary>
+        </member>
+        <member name="P:DP.BlazorDashboard.Models.DashboardOptions.AutoRenderCharts">
+            <summary>
+            Whether to automatically render charts for cards with ChartConfig. Default: true.
+            </summary>
+        </member>
+        <member name="P:DP.BlazorDashboard.Models.DashboardOptions.ChartRenderDelayMs">
+            <summary>
+            Delay in milliseconds before rendering charts (for DOM readiness). Default: 100.
+            </summary>
+        </member>
+        <member name="P:DP.BlazorDashboard.Models.DashboardOptions.Grid">
+            <summary>
+            GridStack configuration options.
+            </summary>
+        </member>
+        <member name="T:DP.BlazorDashboard.Models.GridOptions">
+            <summary>
+            GridStack-specific configuration options.
+            </summary>
+        </member>
+        <member name="P:DP.BlazorDashboard.Models.GridOptions.CellHeight">
+            <summary>
+            Cell height in pixels. Default: 70.
+            </summary>
+        </member>
+        <member name="P:DP.BlazorDashboard.Models.GridOptions.Margin">
+            <summary>
+            Margin between cards in pixels. Default: 10.
+            </summary>
+        </member>
+        <member name="P:DP.BlazorDashboard.Models.GridOptions.Column">
+            <summary>
+            Number of columns in the grid. Default: 12.
+            </summary>
+        </member>
+        <member name="P:DP.BlazorDashboard.Models.GridOptions.Float">
+            <summary>
+            Whether to enable float mode. Default: true.
+            </summary>
+        </member>
+        <member name="P:DP.BlazorDashboard.Models.GridOptions.Animate">
+            <summary>
+            Whether to enable animations. Default: true.
+            </summary>
+        </member>
+        <member name="P:DP.BlazorDashboard.Models.GridOptions.DefaultCardWidth">
+            <summary>
+            Default width for new cards. Default: 4.
+            </summary>
+        </member>
+        <member name="P:DP.BlazorDashboard.Models.GridOptions.DefaultCardHeight">
+            <summary>
+            Default height for new cards. Default: 5.
+            </summary>
+        </member>
+        <member name="T:DP.BlazorDashboard.Services.ChartService">
+            <summary>
+            Service for rendering and managing Chart.js charts.
+            </summary>
+        </member>
+        <member name="M:DP.BlazorDashboard.Services.ChartService.#ctor(Microsoft.JSInterop.IJSRuntime)">
+            <summary>
+            Initializes a new instance of the ChartService.
+            </summary>
+            <param name="jsRuntime">The JavaScript runtime for interop.</param>
+        </member>
+        <member name="M:DP.BlazorDashboard.Services.ChartService.EnsureModuleLoadedAsync">
+            <summary>
+            Ensures the chart module is loaded.
+            </summary>
+        </member>
+        <member name="M:DP.BlazorDashboard.Services.ChartService.RenderChartAsync(System.String,DP.BlazorDashboard.Models.ChartConfig)">
+            <summary>
+            Renders a chart in the specified canvas element.
+            </summary>
+            <param name="canvasId">The ID of the canvas element.</param>
+            <param name="config">The chart configuration.</param>
+        </member>
+        <member name="M:DP.BlazorDashboard.Services.ChartService.RenderChartByCardIdAsync(System.String,DP.BlazorDashboard.Models.ChartConfig)">
+            <summary>
+            Renders a chart for a specific card.
+            </summary>
+            <param name="cardId">The card ID (canvas ID will be {cardId}Canvas).</param>
+            <param name="config">The chart configuration.</param>
+        </member>
+        <member name="M:DP.BlazorDashboard.Services.ChartService.CanvasExistsAsync(System.String)">
+            <summary>
+            Checks if a canvas element exists in the DOM.
+            </summary>
+            <param name="canvasId">The ID of the canvas element.</param>
+            <returns>True if the canvas exists, false otherwise.</returns>
+        </member>
+        <member name="M:DP.BlazorDashboard.Services.ChartService.RenderAllChartsAsync(System.Collections.Generic.IEnumerable{DP.BlazorDashboard.Models.DashboardCard},System.Int32)">
+            <summary>
+            Renders all charts for cards that have ChartConfig.
+            </summary>
+            <param name="cards">The dashboard cards.</param>
+            <param name="retryDelayMs">Delay in milliseconds to wait for canvas elements.</param>
+        </member>
+        <member name="M:DP.BlazorDashboard.Services.ChartService.DisposeAsync">
+            <inheritdoc />
+        </member>
+        <member name="T:DP.BlazorDashboard.Services.DashboardStorageService">
+            <summary>
+            Default implementation of IDashboardStorageService using browser localStorage.
+            </summary>
+        </member>
+        <member name="M:DP.BlazorDashboard.Services.DashboardStorageService.#ctor(Microsoft.JSInterop.IJSRuntime)">
+            <summary>
+            Initializes a new instance of the DashboardStorageService.
+            </summary>
+            <param name="jsRuntime">The JavaScript runtime for interop.</param>
+        </member>
+        <member name="M:DP.BlazorDashboard.Services.DashboardStorageService.LoadLayoutAsync(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:DP.BlazorDashboard.Services.DashboardStorageService.SaveLayoutAsync(System.String,System.Collections.Generic.List{DP.BlazorDashboard.Models.DashboardCard})">
+            <inheritdoc />
+        </member>
+        <member name="M:DP.BlazorDashboard.Services.DashboardStorageService.ClearLayoutAsync(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="T:DP.BlazorDashboard.Services.IDashboardStorageService">
+            <summary>
+            Interface for dashboard layout persistence.
+            Implement this interface to provide custom storage (e.g., server-side, IndexedDB).
+            </summary>
+        </member>
+        <member name="M:DP.BlazorDashboard.Services.IDashboardStorageService.LoadLayoutAsync(System.String)">
+            <summary>
+            Loads the dashboard layout from storage.
+            </summary>
+            <param name="storageKey">The unique key identifying the layout.</param>
+            <returns>The list of dashboard cards, or empty list if not found.</returns>
+        </member>
+        <member name="M:DP.BlazorDashboard.Services.IDashboardStorageService.SaveLayoutAsync(System.String,System.Collections.Generic.List{DP.BlazorDashboard.Models.DashboardCard})">
+            <summary>
+            Saves the dashboard layout to storage.
+            </summary>
+            <param name="storageKey">The unique key identifying the layout.</param>
+            <param name="cards">The cards to save.</param>
+        </member>
+        <member name="M:DP.BlazorDashboard.Services.IDashboardStorageService.ClearLayoutAsync(System.String)">
+            <summary>
+            Clears the stored layout.
+            </summary>
+            <param name="storageKey">The unique key identifying the layout.</param>
+        </member>
+        <member name="T:DP.BlazorDashboard.Services.IThemeService">
+            <summary>
+            Interface for theme management in the dashboard.
+            Implement this interface to provide custom theme handling.
+            </summary>
+        </member>
+        <member name="P:DP.BlazorDashboard.Services.IThemeService.IsDarkMode">
+            <summary>
+            Gets whether dark mode is currently enabled.
+            </summary>
+        </member>
+        <member name="M:DP.BlazorDashboard.Services.IThemeService.SetDarkMode(System.Boolean)">
+            <summary>
+            Sets the dark mode state.
+            </summary>
+            <param name="isDarkMode">True to enable dark mode, false for light mode.</param>
+        </member>
+        <member name="E:DP.BlazorDashboard.Services.IThemeService.OnChange">
+            <summary>
+            Event raised when the theme changes.
+            </summary>
+        </member>
+        <member name="T:DP.BlazorDashboard.Services.ThemeService">
+            <summary>
+            Default implementation of IThemeService for simple dark/light mode management.
+            </summary>
+        </member>
+        <member name="P:DP.BlazorDashboard.Services.ThemeService.IsDarkMode">
+            <inheritdoc />
+        </member>
+        <member name="M:DP.BlazorDashboard.Services.ThemeService.SetDarkMode(System.Boolean)">
+            <inheritdoc />
+        </member>
+        <member name="E:DP.BlazorDashboard.Services.ThemeService.OnChange">
+            <inheritdoc />
+        </member>
+        <member name="P:DP.BlazorDashboard.Components.ChartCard.CardId">
+            <summary>
+            The ID of the card this chart belongs to.
+            </summary>
+        </member>
+        <member name="P:DP.BlazorDashboard.Components.ChartCard.Config">
+            <summary>
+            The chart configuration.
+            </summary>
+        </member>
+        <member name="P:DP.BlazorDashboard.Components.Dashboard.StorageKey">
+            <summary>
+            Storage key for persisting layout to localStorage.
+            </summary>
+        </member>
+        <member name="P:DP.BlazorDashboard.Components.Dashboard.InitialLayoutFactory">
+            <summary>
+            Factory function that returns the initial card layout.
+            </summary>
+        </member>
+        <member name="P:DP.BlazorDashboard.Components.Dashboard.CardRenderer">
+            <summary>
+            Optional custom renderer for card content. If not provided, charts are rendered automatically.
+            </summary>
+        </member>
+        <member name="P:DP.BlazorDashboard.Components.Dashboard.OnLayoutChanged">
+            <summary>
+            Event fired when layout changes (card added, deleted, moved, resized).
+            </summary>
+        </member>
+        <member name="P:DP.BlazorDashboard.Components.Dashboard.Options">
+            <summary>
+            Configuration options for the dashboard. Overrides global options if provided.
+            </summary>
+        </member>
+        <member name="P:DP.BlazorDashboard.Components.Dashboard.OnCardAdded">
+            <summary>
+            Event fired when a card is added.
+            </summary>
+        </member>
+        <member name="P:DP.BlazorDashboard.Components.Dashboard.OnCardDeleted">
+            <summary>
+            Event fired when a card is deleted.
+            </summary>
+        </member>
+        <member name="P:DP.BlazorDashboard.Components.Dashboard.OnLayoutSaved">
+            <summary>
+            Event fired when layout is saved.
+            </summary>
+        </member>
+        <member name="P:DP.BlazorDashboard.Components.Dashboard.AddCardText">
+            <summary>
+            Text for the Add Card button.
+            </summary>
+        </member>
+        <member name="P:DP.BlazorDashboard.Components.Dashboard.ResetLayoutText">
+            <summary>
+            Text for the Reset Layout button.
+            </summary>
+        </member>
+        <member name="P:DP.BlazorDashboard.Components.Dashboard.NewCardFactory">
+            <summary>
+            Optional factory for creating new cards. If not provided, default cards are created.
+            </summary>
+        </member>
+    </members>
+</doc>

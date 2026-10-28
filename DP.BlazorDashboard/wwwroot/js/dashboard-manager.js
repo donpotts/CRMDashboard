@@ -86,8 +86,8 @@ function preventDragFromCardHeader(event) {
 }
 
 // Main initialization function - Fixed to properly target the grid container
-export function init(containerSelector, dotNetHelperRef, layoutData) {
-    console.log("JS: Initializing grid from DATA.", layoutData);
+export function init(containerSelector, dotNetHelperRef, layoutData, gridOptions) {
+    console.log("JS: Initializing grid from DATA.", layoutData, gridOptions);
 
     dotNetHelper = dotNetHelperRef;
 
@@ -105,17 +105,25 @@ export function init(containerSelector, dotNetHelperRef, layoutData) {
         return;
     }
 
+    // Use provided gridOptions or defaults
+    const cellHeight = (gridOptions?.cellHeight ?? 70) + 'px';
+    const margin = gridOptions?.margin ?? 10;
+    const column = gridOptions?.column ?? 12;
+    const float = gridOptions?.float ?? true;
+    const animate = gridOptions?.animate ?? true;
+
     // Initialize GridStack with proper configuration
     grid = GridStack.init({
-        float: true,
-        cellHeight: '70px',
+        float: float,
+        cellHeight: cellHeight,
+        column: column,
         handle: '.move-handle', // Only allow dragging from move handle
         disableOneColumnMode: true, // Prevent layout changes in small screens
         dragIn: false, // Disable dragging in from outside
         dragOut: false, // Disable dragging out
         removable: false, // Disable removing by dragging out
-        margin: 10, // Add some margin between cards
-        animate: true, // Smooth animations
+        margin: margin, // Add some margin between cards
+        animate: animate, // Smooth animations
         draggable: {
             handle: '.move-handle',
             scroll: false, // Prevent scroll during drag

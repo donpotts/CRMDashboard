@@ -1,0 +1,1464 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\background.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>background.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>x2rx4ajns0</Fingerprint>
+      <Integrity>WeOKCkI7IdJHs2kCqsKgLfiWX4/sNPbaRUspOLefkCY=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>378</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\background.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\dashboard.css'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>css/dashboard.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>05ey6u144k</Fingerprint>
+      <Integrity>FIp98Dy9Kx9LMO/QSptV97rvHXSkDtNKs78CAlEQFDA=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>8287</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\dashboard.css'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\chart-renderer.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>js/chart-renderer.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>7ifpije7pl</Fingerprint>
+      <Integrity>vzhNylkGHup/NHFC4DSX2D1gA+X+qQ+zAyDUuzIbcbc=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>2363</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\chart-renderer.js'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\dashboard-manager.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>js/dashboard-manager.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>01jeqfod72</Fingerprint>
+      <Integrity>LPK5aKLSKKvWGQCrDDzGhA289fvz98cEjLes7QR0OI4=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>8299</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:39:37 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\dashboard-manager.js'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\chart.js\chart.umd.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>lib/chart.js/chart.umd.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>n5ka3sxzan</Fingerprint>
+      <Integrity>ddgnx7InH5OMIa64mwjGkvKzZBSfOl4IbviYZQ/U+M8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>204962</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\chart.js\chart.umd.js'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\font-awesome\css\all.min.css'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>lib/font-awesome/css/all.min.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>tofxavwjz8</Fingerprint>
+      <Integrity>U0x6ydTvXLKYKMTVcaBTmYce3sUPW4xyNyN5vtIPsDM=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>102225</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\font-awesome\css\all.min.css'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\font-awesome\webfonts\fa-brands-400.woff2'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>lib/font-awesome/webfonts/fa-brands-400.woff2</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>q73rkx93r0</Fingerprint>
+      <Integrity>+q5vwKqUzFveUHZkfIF6IyBglqHL7aENHG89idYWPtE=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>109808</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\font-awesome\webfonts\fa-brands-400.woff2'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\font-awesome\webfonts\fa-regular-400.woff2'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>lib/font-awesome/webfonts/fa-regular-400.woff2</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>b1kkc6llyf</Fingerprint>
+      <Integrity>kWnYvnqBd+WpKk0Ett5/ZQS5OFc79NpYiYccTzdtOEk=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>24488</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\font-awesome\webfonts\fa-regular-400.woff2'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\font-awesome\webfonts\fa-solid-900.woff2'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>lib/font-awesome/webfonts/fa-solid-900.woff2</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>0qlylnww0u</Fingerprint>
+      <Integrity>iGyGESqATvHd0csgavTIxA40tzwmZSyiMUBKo1prMNk=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>150020</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\font-awesome\webfonts\fa-solid-900.woff2'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\gridstack\dist\gridstack-all.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>lib/gridstack/dist/gridstack-all.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>mfj6f0gl9n</Fingerprint>
+      <Integrity>4lYGz34bR3tfUovQTPaN1cposKzFfa7GfGACvMgY9jY=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>76305</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\gridstack\dist\gridstack-all.js'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\gridstack\dist\gridstack-all.js.map'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>lib/gridstack/dist/gridstack-all.js.map</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>u3yaaodp8r</Fingerprint>
+      <Integrity>1nqsELPd8YPZamlLM0ZXSCh4kf1aQSFpw+F5UckaLcc=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>357059</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\gridstack\dist\gridstack-all.js.map'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\gridstack\dist\gridstack.min.css'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>lib/gridstack/dist/gridstack.min.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>kl5wivjn2c</Fingerprint>
+      <Integrity>WAIGGICIALk5q0lz+5mdsorLXA5LVxOALktC3Afr4Z4=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>5651</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\gridstack\dist\gridstack.min.css'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\300.css'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>lib/roboto/300.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>8cvggq6mir</Fingerprint>
+      <Integrity>WGUzq7uKfHCDYS/yHs4k9qDI8aef7+SNXNzc483NmBg=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>5519</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\300.css'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\400.css'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>lib/roboto/400.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>vqdgopvwqo</Fingerprint>
+      <Integrity>aUq+f35+0OirTqMSC1b+MpdqP0b3eD4y50QQfiM9QlE=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>5519</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\400.css'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\500.css'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>lib/roboto/500.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>fkonxflc3c</Fingerprint>
+      <Integrity>H4k4gXUmBahXtI7/e4u71GXxAZ84VPQ+LmiVcR5rhko=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>5519</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\500.css'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\700.css'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>lib/roboto/700.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>3dw23z1o4r</Fingerprint>
+      <Integrity>V2+oEKG9/7l2fPRkbWIScn8/NLbzK76VmP4pxWWnx3M=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>5519</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\700.css'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-cyrillic-300-normal.woff'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>lib/roboto/files/roboto-cyrillic-300-normal.woff</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>3f3tu8hf3j</Fingerprint>
+      <Integrity>j4Sv1Yncbo48hSAtB8e+Z6/v+YrhmEozBMV1nuC3A/s=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>9780</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-cyrillic-300-normal.woff'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-cyrillic-300-normal.woff2'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>lib/roboto/files/roboto-cyrillic-300-normal.woff2</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>yk0t57rvsl</Fingerprint>
+      <Integrity>zkZQt0yslfbJSEqAjARnkH2PLn6dSBJvwBtv4ufDJUw=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>11832</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-cyrillic-300-normal.woff2'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-cyrillic-400-normal.woff'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>lib/roboto/files/roboto-cyrillic-400-normal.woff</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>sdbp6xrjdd</Fingerprint>
+      <Integrity>IKDORQgZ8jPUBJVsJa86d/I9kcq69S1eF5Qolk0bjew=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>9728</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-cyrillic-400-normal.woff'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-cyrillic-400-normal.woff2'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>lib/roboto/files/roboto-cyrillic-400-normal.woff2</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>el0sj9ou4r</Fingerprint>
+      <Integrity>/lbQ0TessPmxd1TTZw9eyu4hhVSN2ajERTWl8ZQRfdw=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>11840</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-cyrillic-400-normal.woff2'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-cyrillic-500-normal.woff'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>lib/roboto/files/roboto-cyrillic-500-normal.woff</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>bh43k6xwbl</Fingerprint>
+      <Integrity>b7U6vrHQnqt0hsywb1gOpsLKjK1Tixx72ZmQKMqK+bc=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>9900</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-cyrillic-500-normal.woff'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-cyrillic-500-normal.woff2'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>lib/roboto/files/roboto-cyrillic-500-normal.woff2</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>0hkeda5nlj</Fingerprint>
+      <Integrity>3PsJbAo7MIm/zkdT0W7aO9E/r81YFExFn02O/UnOpYw=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>11976</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-cyrillic-500-normal.woff2'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-cyrillic-700-normal.woff'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>lib/roboto/files/roboto-cyrillic-700-normal.woff</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>0ollq7wi4j</Fingerprint>
+      <Integrity>EEnpbB3rV4rh9Vr8TecE2pdhztDoNaud9ASvRRmkZSk=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>9900</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-cyrillic-700-normal.woff'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-cyrillic-700-normal.woff2'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>lib/roboto/files/roboto-cyrillic-700-normal.woff2</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>hd9o1jhq8f</Fingerprint>
+      <Integrity>daJbWL5hu7BYx3dI08SVJpyMy6FyXcM3yhKH8PtpeVI=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>11968</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-cyrillic-700-normal.woff2'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-cyrillic-ext-300-normal.woff'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>lib/roboto/files/roboto-cyrillic-ext-300-normal.woff</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>f3dr2aqm55</Fingerprint>
+      <Integrity>9bpUWoeKW0SJ6Vyt5D47bHyEsMhOrddUdAElq/8VnVQ=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>15384</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-cyrillic-ext-300-normal.woff'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-cyrillic-ext-300-normal.woff2'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>lib/roboto/files/roboto-cyrillic-ext-300-normal.woff2</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ncdzlcq0gp</Fingerprint>
+      <Integrity>qUyB0LP2u5f9l8/Pv6Xcr4U6oCyA1RJyguh43tM39yc=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>16912</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-cyrillic-ext-300-normal.woff2'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-cyrillic-ext-400-normal.woff'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>lib/roboto/files/roboto-cyrillic-ext-400-normal.woff</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>yf4okuc7xd</Fingerprint>
+      <Integrity>gofh+jnCxQLc2ipoj9FJh+8oQGWBGnGOVNrBfSanvJ4=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>15396</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-cyrillic-ext-400-normal.woff'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-cyrillic-ext-400-normal.woff2'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>lib/roboto/files/roboto-cyrillic-ext-400-normal.woff2</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>2hvop30jn4</Fingerprint>
+      <Integrity>quV3eY/z9Onh2WQKl96jmmWVeCdlSK9RvSr1VmyGvM4=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>16848</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-cyrillic-ext-400-normal.woff2'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-cyrillic-ext-500-normal.woff'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>lib/roboto/files/roboto-cyrillic-ext-500-normal.woff</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ht9oqox2dw</Fingerprint>
+      <Integrity>S24ag8UjHlKEURKoKYjuGoODBLF7xXWK3ldJ/R7UZC4=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>15520</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-cyrillic-ext-500-normal.woff'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-cyrillic-ext-500-normal.woff2'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>lib/roboto/files/roboto-cyrillic-ext-500-normal.woff2</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>iqak8lvctd</Fingerprint>
+      <Integrity>piCGC2PenEDayaWbAJTGGumy4XuPxjKJmUaJTLw71uM=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>17160</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-cyrillic-ext-500-normal.woff2'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-cyrillic-ext-700-normal.woff'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>lib/roboto/files/roboto-cyrillic-ext-700-normal.woff</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>d9iz1vgyzs</Fingerprint>
+      <Integrity>MUQVBIOA/hlE+1Y6YIFVLaxM5cF4wWbQ7S+Z45mi7C8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>15508</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-cyrillic-ext-700-normal.woff'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-cyrillic-ext-700-normal.woff2'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>lib/roboto/files/roboto-cyrillic-ext-700-normal.woff2</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>wzfhxfmyvy</Fingerprint>
+      <Integrity>xFc/WWRgdpT7CDy9mLB/9xWyM+oJ9Ofnu9fArBUvjlQ=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>17112</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-cyrillic-ext-700-normal.woff2'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-greek-300-normal.woff'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>lib/roboto/files/roboto-greek-300-normal.woff</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>pbxbclacn2</Fingerprint>
+      <Integrity>dR2MJAEAoaE6e1hAwsQ9OL901qHCD42P0fjwvaJkn1w=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>7480</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-greek-300-normal.woff'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-greek-300-normal.woff2'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>lib/roboto/files/roboto-greek-300-normal.woff2</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>bluto1ihf7</Fingerprint>
+      <Integrity>4aOMyP9UbT3xRZyJ34e46q0KQM1ZsWa1vIRkKxFU1ds=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>9560</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-greek-300-normal.woff2'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-greek-400-normal.woff'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>lib/roboto/files/roboto-greek-400-normal.woff</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>qzayvn2xr5</Fingerprint>
+      <Integrity>Jger/PWNTeV7yOYyFdnpVOXia5qd1xm6ugRj11Hr0oU=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>7468</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-greek-400-normal.woff'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-greek-400-normal.woff2'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>lib/roboto/files/roboto-greek-400-normal.woff2</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>4e1ast0e2x</Fingerprint>
+      <Integrity>dCpJBHCtWt2BqGFGAvWWCdsR6/jzH19Ybv8rNMf7Xac=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>9644</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-greek-400-normal.woff2'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-greek-500-normal.woff'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>lib/roboto/files/roboto-greek-500-normal.woff</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>cxxknfuefu</Fingerprint>
+      <Integrity>wFtee2lfpK5XQudmSNwzQMTxXrbFO3sGqYU8LNY0UQI=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>7512</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-greek-500-normal.woff'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-greek-500-normal.woff2'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>lib/roboto/files/roboto-greek-500-normal.woff2</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>2vr4s59uif</Fingerprint>
+      <Integrity>8rkofocOZWObw0r4oiZXWzdImV3U++2HMTbr0ZTCJFY=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>9640</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-greek-500-normal.woff2'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-greek-700-normal.woff'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>lib/roboto/files/roboto-greek-700-normal.woff</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>d74ruf2n0r</Fingerprint>
+      <Integrity>91dKhXc4kp+5ZtE8L4WS7Iba4jJWontqAhcqrtk8v0E=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>7488</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-greek-700-normal.woff'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-greek-700-normal.woff2'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>lib/roboto/files/roboto-greek-700-normal.woff2</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>fjyt51ef48</Fingerprint>
+      <Integrity>G70cfrVQFo06NJ5J42wqRAsDk1oveuGPiTUPXt809Qk=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>9680</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-greek-700-normal.woff2'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-greek-ext-300-normal.woff'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>lib/roboto/files/roboto-greek-ext-300-normal.woff</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>adcf6qoddk</Fingerprint>
+      <Integrity>XhoZsdsXIHEkhdGZU0ycbXFbM3MnlNiWI01qC8NfpF4=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>1452</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-greek-ext-300-normal.woff'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-greek-ext-300-normal.woff2'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>lib/roboto/files/roboto-greek-ext-300-normal.woff2</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>fyyr8g4yy9</Fingerprint>
+      <Integrity>t/FxO1ZfdpsGBSkcwoECwB49i+Syxvsc41t6rNEcDRw=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>3656</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-greek-ext-300-normal.woff2'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-greek-ext-400-normal.woff'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>lib/roboto/files/roboto-greek-ext-400-normal.woff</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>q4muuj82k5</Fingerprint>
+      <Integrity>dioS8vtMxHqDT6ZkGiTbopAFhOzPyutZ3xm421d41Lk=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>1476</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-greek-ext-400-normal.woff'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-greek-ext-400-normal.woff2'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>lib/roboto/files/roboto-greek-ext-400-normal.woff2</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>aw8yhiftvd</Fingerprint>
+      <Integrity>djWybKx5I6KpSthn1Br+TMke69z/xMsoKnvzS7sZWuc=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>3676</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-greek-ext-400-normal.woff2'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-greek-ext-500-normal.woff'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>lib/roboto/files/roboto-greek-ext-500-normal.woff</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>1eg7i5djp9</Fingerprint>
+      <Integrity>uWQ3OeSFdCFpDGO5n22NJ86ZGdvngUTHDvAhyGCvi4o=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>1464</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-greek-ext-500-normal.woff'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-greek-ext-500-normal.woff2'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>lib/roboto/files/roboto-greek-ext-500-normal.woff2</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>phujl33wmi</Fingerprint>
+      <Integrity>4400ZfLIv2fMUxtqaEhLAUQanAMsLEpvZNN11zJnhBU=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>3692</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-greek-ext-500-normal.woff2'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-greek-ext-700-normal.woff'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>lib/roboto/files/roboto-greek-ext-700-normal.woff</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>f84d0qlr6l</Fingerprint>
+      <Integrity>UfFKy6ys8eidipt181IZymRA3cLRmVtHFdnsWYwYzg0=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>1452</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-greek-ext-700-normal.woff'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-greek-ext-700-normal.woff2'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>lib/roboto/files/roboto-greek-ext-700-normal.woff2</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>s7z5an3l01</Fingerprint>
+      <Integrity>iLfF5hkCq4ZpE1akRRflfves51STbdYTIZkaS43Y+/A=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>3660</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-greek-ext-700-normal.woff2'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-latin-300-normal.woff'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>lib/roboto/files/roboto-latin-300-normal.woff</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>l0meos4qta</Fingerprint>
+      <Integrity>9S6vIObmzgoLgjQcGGVVk5nhCjZnCi4T0TGumEgEN4k=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>19792</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-latin-300-normal.woff'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-latin-300-normal.woff2'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>lib/roboto/files/roboto-latin-300-normal.woff2</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>mfuzk9ec0i</Fingerprint>
+      <Integrity>LkOAKp0VVtvjYMIuK4Wll+WZSj1ogf7bVEE2w3De8F4=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>20712</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-latin-300-normal.woff2'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-latin-400-normal.woff'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>lib/roboto/files/roboto-latin-400-normal.woff</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>gsjpjsdg0u</Fingerprint>
+      <Integrity>kBzNHYO6nRniupBJZNpWmjxhxtZSvTnRui+G8mk26Mk=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>19572</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-latin-400-normal.woff'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-latin-400-normal.woff2'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>lib/roboto/files/roboto-latin-400-normal.woff2</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>09q4fk3qha</Fingerprint>
+      <Integrity>5EwR9INL3U1rbae47l6uvIrLQSUM1rzlzILqgmIUDqo=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>20612</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-latin-400-normal.woff2'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-latin-500-normal.woff'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>lib/roboto/files/roboto-latin-500-normal.woff</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>752q9ds2i7</Fingerprint>
+      <Integrity>W8qDvLZnGLNEZUc8OvAoMrE2fo/JlAZRCpkkua/v+60=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>19668</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-latin-500-normal.woff'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-latin-500-normal.woff2'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>lib/roboto/files/roboto-latin-500-normal.woff2</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>fff8d8cpmz</Fingerprint>
+      <Integrity>5bKcNrLnovTbWDBzWfpXQAS+Q9OXkOS3o8+Ap7Fui7Y=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>20928</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-latin-500-normal.woff2'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-latin-700-normal.woff'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>lib/roboto/files/roboto-latin-700-normal.woff</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ful925ep70</Fingerprint>
+      <Integrity>KZPiso25iQWHcIOfDJFgnh99h9syLmt6z+eABCSpHoY=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>19724</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-latin-700-normal.woff'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-latin-700-normal.woff2'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>lib/roboto/files/roboto-latin-700-normal.woff2</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>m6mm1exkjq</Fingerprint>
+      <Integrity>zsLHcq3l/s55W7GO7quGMjRxrL2T/iY5pAq6ZE+fJNs=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>20996</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-latin-700-normal.woff2'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-latin-ext-300-normal.woff'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>lib/roboto/files/roboto-latin-ext-300-normal.woff</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>qt3au6p6kz</Fingerprint>
+      <Integrity>Igga/J6nvHyJtbDQ5PYjTLy94rdAE7P11V0PGI03tXg=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>12584</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-latin-ext-300-normal.woff'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-latin-ext-300-normal.woff2'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>lib/roboto/files/roboto-latin-ext-300-normal.woff2</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>heyqmow8zs</Fingerprint>
+      <Integrity>qWbtmoRM1gtW1OGzGwBR/tEbpPWxdFfHSEbGQ3/63QI=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>13736</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-latin-ext-300-normal.woff2'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-latin-ext-400-normal.woff'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>lib/roboto/files/roboto-latin-ext-400-normal.woff</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>suekh9g4y6</Fingerprint>
+      <Integrity>NP1VRFb4ClpjhPhVMErmMYj/gZ/W2bzOQmZoulEdbqI=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>12472</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-latin-ext-400-normal.woff'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-latin-ext-400-normal.woff2'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>lib/roboto/files/roboto-latin-ext-400-normal.woff2</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>hvhinqt3dm</Fingerprint>
+      <Integrity>/dlTwogVmh8UmRFyDYoZ+tF9yA8aBgmUjPoUWMNoiZ0=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>13740</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-latin-ext-400-normal.woff2'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-latin-ext-500-normal.woff'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>lib/roboto/files/roboto-latin-ext-500-normal.woff</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>584dtge5ma</Fingerprint>
+      <Integrity>WwxNdEIgxbW+lzBxGS2J3u+8R9l7iDoSR/RgAWVwsis=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>12524</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-latin-ext-500-normal.woff'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-latin-ext-500-normal.woff2'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>lib/roboto/files/roboto-latin-ext-500-normal.woff2</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ry34v6u61a</Fingerprint>
+      <Integrity>7VvwLWSNqE2NaOXnqSYcGY9HE5afkrVymoH7A5qTvhU=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>13976</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-latin-ext-500-normal.woff2'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-latin-ext-700-normal.woff'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>lib/roboto/files/roboto-latin-ext-700-normal.woff</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>u2on3edu6k</Fingerprint>
+      <Integrity>pgS4FGMJrL92aTtVhEf6Y9syfnddBHAcdCvYbx2HnNE=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>12480</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-latin-ext-700-normal.woff'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-latin-ext-700-normal.woff2'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>lib/roboto/files/roboto-latin-ext-700-normal.woff2</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>hsmpm38mg2</Fingerprint>
+      <Integrity>X/6f+0tB+7vkiQKDgYd5pItL2qrxPjnb/zuK8xsdwO4=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>13964</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-latin-ext-700-normal.woff2'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-vietnamese-300-normal.woff'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>lib/roboto/files/roboto-vietnamese-300-normal.woff</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>9t5m0j17qk</Fingerprint>
+      <Integrity>Ez2Zki5g3La8BLiOyVsCY3aQSyF2mOOSZDNz/BbyYh0=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>5476</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-vietnamese-300-normal.woff'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-vietnamese-300-normal.woff2'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>lib/roboto/files/roboto-vietnamese-300-normal.woff2</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>lu083vz7hu</Fingerprint>
+      <Integrity>s5o3YfQflHbf2CdEZIfLebPbtVPSnr5QOV5CIzHg160=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>7840</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-vietnamese-300-normal.woff2'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-vietnamese-400-normal.woff'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>lib/roboto/files/roboto-vietnamese-400-normal.woff</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>v4ewz6s5nv</Fingerprint>
+      <Integrity>cRWoEHAKra/ZChYikjfkrLq80hcwGmaWriPBvA72ibs=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>5436</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-vietnamese-400-normal.woff'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-vietnamese-400-normal.woff2'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>lib/roboto/files/roboto-vietnamese-400-normal.woff2</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>mawhif8q61</Fingerprint>
+      <Integrity>vqv+qMfvdpNCfDf5ns4HH0w6rxS1kLEsRcPqYljYlqg=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>7856</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-vietnamese-400-normal.woff2'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-vietnamese-500-normal.woff'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>lib/roboto/files/roboto-vietnamese-500-normal.woff</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>3f19egk1j2</Fingerprint>
+      <Integrity>kQKiDahlqguKD8Oq0ymyqWALDangk39badGNBclHJuc=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>5480</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-vietnamese-500-normal.woff'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-vietnamese-500-normal.woff2'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>lib/roboto/files/roboto-vietnamese-500-normal.woff2</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>htpspvgzpa</Fingerprint>
+      <Integrity>tcbjTUcacjJsMVH2+Jtws+QyJ0f3Z9QPzUllYH68ymg=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>7840</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-vietnamese-500-normal.woff2'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-vietnamese-700-normal.woff'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>lib/roboto/files/roboto-vietnamese-700-normal.woff</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>sxmhvswv3z</Fingerprint>
+      <Integrity>oEJUpf1qAnbD00LBfgACV+NuHnVtkkR0A68JBFiu5pQ=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>5444</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-vietnamese-700-normal.woff'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-vietnamese-700-normal.woff2'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>lib/roboto/files/roboto-vietnamese-700-normal.woff2</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ucyj39v6m4</Fingerprint>
+      <Integrity>UrRmgRc8jZzTfXLR5eSWHZ4jsYDZWCWoXDIDUzX4NDE=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>7880</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\files\roboto-vietnamese-700-normal.woff2'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\LICENSE'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DP.BlazorDashboard</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DP.BlazorDashboard</BasePath>
+      <RelativePath>lib/roboto/LICENSE</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ulxvt36fd6</Fingerprint>
+      <Integrity>HvvcnLLZiqqERXS1Ej+NUjNTLCFLolnhU24dVwLQWKE=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>4407</FileLength>
+      <LastWriteTime>Thu, 08 Jan 2026 18:06:18 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\roboto\LICENSE'))</OriginalItemSpec>
+    </StaticWebAsset>
+  </ItemGroup>
+</Project>
